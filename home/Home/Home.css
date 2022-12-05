@@ -874,7 +874,7 @@
 	left: 83px;
 	top: 1px;
 	position: absolute;
-	overflow: hidden;
+	overflow: visible;
 	width: 422px;
 	height: 48px;
 	text-align: left;
@@ -906,10 +906,10 @@
 	padding: 0px;
 }
 #n__haloradostudio {
-	left: 62.42px;
+	left: 85px;
 	top: 1px;
 	position: absolute;
-	overflow: hidden;
+	overflow: visible;
 	width: 422px;
 	height: 48px;
 	text-align: left;
@@ -944,7 +944,7 @@
 	left: 80.527px;
 	top: 0px;
 	position: absolute;
-	overflow: hidden;
+	overflow: visible;
 	width: 774px;
 	height: 46px;
 	text-align: left;
