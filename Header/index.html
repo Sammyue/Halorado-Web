@@ -3,21 +3,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header of Halorado</title>
+    <title>Header</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <!--Heading includs both the logo and the contact (fixed)-->
-
-    <div class="heading">
-        <div id="logo">
-            <img src="C:\Users\xuyue\Desktop\pofolio\Halorado\Halorado Web\home\Logo.png" alt="logo of Halorado">
+    <section class="header">
+        <div class="logo">
+            <a href="#"><img src="../home/Home/Imag/Logo.png" width="60"></a>
         </div>
-
-        <div class="contact heading">
-            <div id="ins">
-                <img src="" alt="">
-            </div>
+        <nav class="nav-container">
+            <div class="nav"><a href="#">Home</a></div>
+            <div class="nav"><a href="#">Gallery</a></div>
+            <div class="nav"><a href="#">Services</a></div>
+            <div class="nav"><a href="#">About</a></div>
+            <div class="nav"><a href="#">Contact</a></div> 
+        </nav>
+        <nav class="nav-contact">
+            <a href="#" class="fa fa-instagram"> @haloradostudio</a>
+            <a href="#" class="fa fa-envelope"> Loremipsum@conset.com</a>
+            <a href="#" class="fa fa-weixin"> haloradostudio</a>
+        </nav>
+        
+        <div class="togglebox">
+            <nav class="nav-contact-icon">
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-envelope"></a>
+                <a href="#" class="fa fa-weixin"></a>
+            </nav>
+            <input type="checkbox" id="hamburger">
+            <label for="hamburger" class="hamburger">
+                <div class="bars-container" onclick="showMenu()">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                </div>
+            </label>
         </div>
-    </div>
+    </section>
+
+    <section class="main">
+        <p>Lorem ipsum dolor sit amet. Et autem nemo At vero doloremque cum deleniti molestiae et eius rerum aut illo quia est quibusdam voluptas. Vel recusandae commodi ea odio galisum At voluptatem incidunt ut enim placeat. </p><p>Cum voluptatem impedit rem neque quas et voluptatem omnis et commodi neque. Ab cupiditate voluptatum eum quia sunt est voluptas modi ut odit accusamus et totam totam est repudiandae explicabo. Nam quia earum et tenetur voluptas ut dicta amet ut provident quia aut obcaecati architecto et impedit architecto. </p><p>Et expedita dolores hic deserunt voluptatem ut temporibus voluptatibus. Vel consequatur ducimus aut voluptatibus enim et illo possimus et Quis ducimus? Ut voluptatem minima est nesciunt odit et mollitia nostrum. Vel suscipit perferendis et incidunt assumenda qui labore fugiat. </p>
+    </section>
+
+    <script>
+        function showMenu (){
+            document.querySelector('.nav-container').classList.toggle('active');
+            document.querySelector('.bars-container').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

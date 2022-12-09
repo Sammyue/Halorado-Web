@@ -3681,3 +3681,11 @@
 	left: 0px;
 	top: 0px;
 }
+
+@media only screen and (min-width: 1281px) {
+	#Home {
+		position: static;
+		margin: 0 auto;
+	}
+	
+}
