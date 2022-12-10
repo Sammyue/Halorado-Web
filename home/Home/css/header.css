@@ -1,0 +1,209 @@
+/*  header */ 
+#header {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    position: fixed;
+    width: 1280px;
+    height: 80px;
+    top: 0;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 2;
+}
+
+.sidebar {
+    position: fixed;
+    width: 1280px;
+    height: 80px;
+    top: 200px;
+    background-color: aqua;
+}
+
+/* logo image */
+.logo {
+    position: relative;
+    left: 400px;
+}
+
+.logo img {
+    width: 65%;
+}
+
+/* navigation before toggle */ 
+nav.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background: rgba(157,158,206,0.97);
+    transition: all 0.5s ease 0s;
+}
+
+nav.nav-container div.nav {
+    display: flex;
+}
+
+nav.nav-container div.nav a {
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+nav.nav-contact {
+    display: none;
+}
+
+nav.nav-sidebar-container {
+    display: none;
+}
+
+
+/* navigation after toggle */
+nav.nav-container.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    height: 47%;
+    background: rgba(157,158,206,0.97);
+}
+
+nav.nav-container.active div.nav {
+    display: flex;
+}
+
+nav.nav-container.active div.nav a {
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.togglebox {
+    position: fixed;
+    right: 20px;
+    top: 15px;
+    display: flex;
+    padding: 10px;
+}
+
+/* contact icons */
+nav.nav-contact-icon a {
+    position: relative;
+    right: 8px;
+    text-decoration: none;
+    color: rgba(157,158,206,1);
+    padding: 5px;
+    font-size: 18px;
+}
+
+/* hide checkbox */
+input#hamburger {
+    display: none;
+}
+
+/* hamburger container */
+label.hamburger {
+    cursor: pointer;
+}
+
+/* hamburger bars */
+.bars {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(157,158,206,1);
+}
+
+/* hamburger bars change to X once clicked */
+
+div.bars-container.active span:nth-child(2){
+    opacity: 0;
+}
+div.bars-container.active span:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+div.bars-container.active span:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+/* for desktop responsiveness */ 
+@media only screen and (min-width: 991px) {
+
+    .logo {
+        left: 100px;
+        top: 40px;
+    }
+    .logo img {
+        width: 100%;
+    }
+
+    nav.nav-sidebar-container {
+        display: block;
+        position: fixed;
+        width: 10%;
+        left: 100px;
+        top: 30%;
+    }
+
+    div.nav-sidebar {
+        position: relative;
+        writing-mode: vertical-rl;
+        -webkit-transform: translateX(50px) rotate(180deg);
+        transform: translateX(50px) rotate(180deg);
+    }
+
+    div.nav-sidebar a {
+        text-decoration: none;
+        font-family: Mr Eaves San OT;
+        font-weight: normal;
+        font-size: 25px;
+        color: rgba(157,158,206,1);
+        padding: 6px;
+    }
+
+    nav.nav-contact {
+        display: flex;
+    }
+
+    /* hide contact-icon section on widescreen */
+    nav.nav-contact-icon{
+        display: none;
+    }
+
+    /* contact bar */
+    nav.nav-contact a {
+        text-decoration: none;
+        font-size: 20px;
+        padding: 10px;
+        color: rgba(157,158,206,1);
+        font-weight: normal;
+    }
+
+    /* remove hamburger */ 
+    div.togglebox {
+        display: none;
+    }
+}

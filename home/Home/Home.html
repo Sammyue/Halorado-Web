@@ -6,1012 +6,994 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Home</title>
 <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="Home.css"/>
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script id="applicationScript" type="text/javascript" src="Home.js"></script>
 </head>
 <body>
-<div id="Home">
-	<img id="zoey_2" src="Imag\zoey_2.png">
-		
-	<svg class="Rectangle_43">
-		<rect id="Rectangle_43" rx="0" ry="0" x="0" y="0" width="829" height="485">
-		</rect>
-	</svg>
-	<svg class="Rectangle_38">
-		<rect id="Rectangle_38" rx="0" ry="0" x="0" y="0" width="498" height="1220">
-		</rect>
-	</svg>
-	<svg class="Rectangle_40">
-		<rect id="Rectangle_40" rx="0" ry="0" x="0" y="0" width="498" height="831">
-		</rect>
-	</svg>
-	<svg class="Rectangle_39">
-		<rect id="Rectangle_39" rx="0" ry="0" x="0" y="0" width="338" height="451">
-		</rect>
-	</svg>
-	<svg class="Rectangle_42">
-		<rect id="Rectangle_42" rx="0" ry="0" x="0" y="0" width="338" height="534">
-		</rect>
-	</svg>
-	<svg class="Rectangle_41">
-		<rect id="Rectangle_41" rx="0" ry="0" x="0" y="0" width="733" height="240">
-		</rect>
-	</svg>
-	<div id="Slogan">
-		<div id="Slogan_b">
-			<span>Slogan</span>
-		</div>
-		<div id="Lorem_ipsum_dolor_sit_amet_con">
-			<span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor</span>
-		</div>
-	</div>
-	<div id="Gallery">
-		<span>Gallery</span>
-	</div>
-	<div id="Service">
-		<span>Service</span>
-	</div>
-	<div id="About">
-		<span>About</span>
-	</div>
-	<div id="Mural_Art">
-		<span>Mural Art</span>
-	</div>
-	<div id="Wall_Art">
-		<span>Wall Art</span>
-	</div>
-	<div id="Intro_of_Halorado">
-		<span>Intro of Halorado</span>
-	</div>
-	<div id="short_intro">
-		<div id="n_Pic_Name">
-			<span> Colorful Village</span>
-		</div>
-		<div id="Lorem_ipsum_dolor_sit_amet_con_cd">
-			<span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor</span>
-		</div>
-	</div>
-	<div id="Group_267">
-		<div id="short_intro_cf">
-			<div id="n_Pic_Name_cg">
-				<span> Pic Name</span>
+
+	<!-- ****************************************************************** -->
+    <!--                             HEADER                                 -->
+    <!-- ****************************************************************** -->
+
+	<div id="header">
+		<section class="header">
+			<div class="logo">
+				<a href="#"><img src="Imag/Logo.png"></a>
 			</div>
-			<div id="Lorem_ipsum_dolor_sit_amet_con_ch">
+			<nav class="nav-container">
+				<div class="nav"><a href="#">Home</a></div>
+				<div class="nav"><a href="#">Gallery</a></div>
+				<div class="nav"><a href="#">Services</a></div>
+				<div class="nav"><a href="#">About</a></div>
+				<div class="nav"><a href="#">Contact</a></div> 
+			</nav>
+			<nav class="nav-contact">
+				<a href="#" class="fa fa-instagram"> @haloradostudio</a>
+				<a href="#" class="fa fa-envelope"> Loremipsum@conset.com</a>
+				<a href="#" class="fa fa-weixin"> haloradostudio</a>
+			</nav>
+			<nav class="nav-sidebar-container">
+				<div class="nav-sidebar"><a href="#">Home</a></div>
+				<div class="nav-sidebar"><a href="#">Gallery</a></div>
+				<div class="nav-sidebar"><a href="#">Services</a></div>
+				<div class="nav-sidebar"><a href="#">About</a></div>
+				<div class="nav-sidebar"><a href="#">Contact</a></div>
+			</nav>
+			<div class="togglebox">
+				<nav class="nav-contact-icon">
+					<a href="#" class="fa fa-instagram"></a>
+					<a href="#" class="fa fa-envelope"></a>
+					<a href="#" class="fa fa-weixin"></a>
+				</nav>
+				<input type="checkbox" id="hamburger">
+				<label for="hamburger" class="hamburger">
+					<div class="bars-container" onclick="showMenu()">
+						<span class="bars"></span>
+						<span class="bars"></span>
+						<span class="bars"></span>
+					</div>
+				</label>
+			</div>
+		</section>
+		<section class="sidebar">
+			<nav class="nav-sidebar-container">
+				<div class="nav-sidebar"><a href="#">Home</a></div>
+				<div class="nav-sidebar"><a href="#">Gallery</a></div>
+				<div class="nav-sidebar"><a href="#">Services</a></div>
+				<div class="nav-sidebar"><a href="#">About</a></div>
+				<div class="nav-sidebar"><a href="#">Contact</a></div>
+			</nav>
+		</section>
+		<script>
+			function showMenu (){
+				document.querySelector('.nav-container').classList.toggle('active');
+				document.querySelector('.bars-container').classList.toggle('active');
+			}
+		</script>
+	</div>
+
+	<!-- ****************************************************************** -->
+    <!--                             BODY                                 	-->
+    <!-- ****************************************************************** -->
+
+	<div id="Home">
+		<img id="zoey_2" src="Imag\zoey_2.png">
+			
+		<svg class="Rectangle_43">
+			<rect id="Rectangle_43" rx="0" ry="0" x="0" y="0" width="829" height="485">
+			</rect>
+		</svg>
+		<svg class="Rectangle_38">
+			<rect id="Rectangle_38" rx="0" ry="0" x="0" y="0" width="498" height="1220">
+			</rect>
+		</svg>
+		<svg class="Rectangle_40">
+			<rect id="Rectangle_40" rx="0" ry="0" x="0" y="0" width="498" height="831">
+			</rect>
+		</svg>
+		<svg class="Rectangle_39">
+			<rect id="Rectangle_39" rx="0" ry="0" x="0" y="0" width="338" height="451">
+			</rect>
+		</svg>
+		<svg class="Rectangle_42">
+			<rect id="Rectangle_42" rx="0" ry="0" x="0" y="0" width="338" height="534">
+			</rect>
+		</svg>
+		<svg class="Rectangle_41">
+			<rect id="Rectangle_41" rx="0" ry="0" x="0" y="0" width="733" height="240">
+			</rect>
+		</svg>
+		<div id="Slogan">
+			<div id="Slogan_b">
+				<span>Slogan</span>
+			</div>
+			<div id="Lorem_ipsum_dolor_sit_amet_con">
 				<span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor</span>
 			</div>
 		</div>
-	</div>
-	<div id="short_intro_ci">
-		<div id="n_Pic_Name_cj">
-			<span> Pic Name</span>
+		<div id="Gallery">
+			<span>Gallery</span>
 		</div>
-		<div id="Lorem_ipsum_dolor_sit_amet_con_ck">
-			<span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor</span>
+		<div id="Service">
+			<span>Service</span>
 		</div>
-	</div>
-	<div id="Component_1__14" class="Component_1___14">
-		<svg class="Rectangle_6">
-			<rect id="Rectangle_6" rx="15" ry="15" x="0" y="0" width="223" height="83">
-			</rect>
-		</svg>
-		<div id="More">
-			<span>More</span>
+		<div id="About">
+			<span>About</span>
 		</div>
-	</div>
-	<div id="Component_1__15" class="Component_1___15">
-		<svg class="Rectangle_6_cp">
-			<rect id="Rectangle_6_cp" rx="15" ry="15" x="0" y="0" width="223" height="83">
-			</rect>
-		</svg>
-		<div id="Request">
-			<span>Request</span>
+		<div id="Mural_Art">
+			<span>Mural Art</span>
 		</div>
-	</div>
-	<div id="Lorem_ipsum_dolor_sit_amet_con_cr">
-		<span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</span>
-	</div>
-	<div id="Lorem_ipsum_dolor_sit_amet_con_cs">
-		<span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</span>
-	</div>
-	<img id="IMG_3623" src="Imag\IMG_3623.png">
-		
-	<img id="stilllife1" src="Imag\stilllife1.png">
-		
-	<img id="IMG_4507" src="Imag\IMG_4507.png">
-		
-	<svg class="Path_123" viewBox="0 305 1 1">
-		<path id="Path_123" d="M 0 305">
-		</path>
-	</svg>
-	<div id="Group_5">
-		<img id="juno2" src="Imag\juno2.png">
-			
-		<div id="Zoey_Zhang">
-			<span>Zoey Zhang</span>
+		<div id="Wall_Art">
+			<span>Wall Art</span>
 		</div>
-		<div id="Juno">
-			<span>Juno</span>
+		<div id="Intro_of_Halorado">
+			<span>Intro of Halorado</span>
 		</div>
-	</div>
-	<div id="Lorem_ipsum_dolor_sit_amet_con_c">
-		<span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</span>
-	</div>
-	<div id="Lorem_ipsum_dolor_sit_amet_con_da">
-		<span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</span>
-	</div>
-	<div id="Lorem_ipsum_dolor_sit_amet_con_db">
-		<span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</span>
-	</div>
-	<div id="Group_39">
-		<div id="Component_9__382" class="Component_9___382">
-			<div id="Group_38">
-				<div id="Contact">
-					<span>Contact</span>
+		<div id="short_intro">
+			<div id="n_Pic_Name">
+				<span> Colorful Village</span>
+			</div>
+			<div id="Lorem_ipsum_dolor_sit_amet_con_cd">
+				<span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor</span>
+			</div>
+		</div>
+		<div id="Group_267">
+			<div id="short_intro_cf">
+				<div id="n_Pic_Name_cg">
+					<span> Pic Name</span>
 				</div>
-				<svg class="Rectangle_27">
-					<rect id="Rectangle_27" rx="0" ry="0" x="0" y="0" width="50" height="4.778">
-					</rect>
-				</svg>
-			</div>
-		</div>
-		<div id="Component_9__383" class="Component_9___383">
-			<div id="Group_38_da">
-				<div id="About_db">
-					<span>About</span>
+				<div id="Lorem_ipsum_dolor_sit_amet_con_ch">
+					<span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor</span>
 				</div>
-				<svg class="Rectangle_27_dc">
-					<rect id="Rectangle_27_dc" rx="0" ry="0" x="0" y="0" width="50" height="4.778">
-					</rect>
-				</svg>
 			</div>
 		</div>
-		<div id="Component_9__384" class="Component_9___384">
-			<div id="Group_38_de">
-				<div id="Service_df">
-					<span>Service</span>
-				</div>
-				<svg class="Rectangle_27_dg">
-					<rect id="Rectangle_27_dg" rx="0" ry="0" x="0" y="0" width="50" height="4.778">
-					</rect>
-				</svg>
+		<div id="short_intro_ci">
+			<div id="n_Pic_Name_cj">
+				<span> Pic Name</span>
+			</div>
+			<div id="Lorem_ipsum_dolor_sit_amet_con_ck">
+				<span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor</span>
 			</div>
 		</div>
-		<div id="Component_9__385" class="Component_9___385">
-			<div id="Group_38_di">
-				<div id="Gallery_dj">
-					<span>Gallery</span>
-				</div>
-				<svg class="Rectangle_27_dk">
-					<rect id="Rectangle_27_dk" rx="0" ry="0" x="0" y="0" width="50" height="4.778">
-					</rect>
-				</svg>
+		<div id="Component_1__14" class="Component_1___14">
+			<svg class="Rectangle_6">
+				<rect id="Rectangle_6" rx="15" ry="15" x="0" y="0" width="223" height="83">
+				</rect>
+			</svg>
+			<div id="More">
+				<span>More</span>
 			</div>
 		</div>
-		<div id="Component_9__386" class="Component_9___386">
-			<div id="Group_38_dm">
-				<div id="Home_dn">
-					<span>Home</span>
-				</div>
-				<svg class="Rectangle_27_do">
-					<rect id="Rectangle_27_do" rx="0" ry="0" x="0" y="0" width="50" height="4.778">
-					</rect>
-				</svg>
-			</div>
-		</div>
-	</div>
-	<div id="Group_149">
-		<div id="n_haloradostudio">
-			<span>@ haloradostudio</span>
-		</div>
-		<svg class="Icon_awesome-instagram" viewBox="-0.005 2.238 49.222 49.211">
-			<path id="Icon_awesome-instagram" d="M 24.61111259460449 14.22607040405273 C 17.62727355957031 14.22607040405273 11.9940824508667 19.85926246643066 11.9940824508667 26.84310340881348 C 11.9940824508667 33.82693862915039 17.62727355957031 39.46012878417969 24.61111259460449 39.46012878417969 C 31.59495162963867 39.46012878417969 37.22814178466797 33.82693862915039 37.22814178466797 26.84310340881348 C 37.22814178466797 19.8592643737793 31.59495162963867 14.22607040405273 24.61111259460449 14.22607040405273 Z M 24.61111259460449 35.04581451416016 C 20.09797096252441 35.04581451416016 16.40839767456055 31.36721992492676 16.40839767456055 26.84309959411621 C 16.40839767456055 22.31897354125977 20.08699226379395 18.640380859375 24.61111450195312 18.640380859375 C 29.1352367401123 18.640380859375 32.81383514404297 22.31897354125977 32.81383514404297 26.84309959411621 C 32.81383514404297 31.36721992492676 29.1242561340332 35.04581451416016 24.61111450195312 35.04581451416016 Z M 40.68711853027344 13.7099666595459 C 40.68711853027344 15.34611892700195 39.36941528320312 16.6528434753418 37.74424362182617 16.6528434753418 C 36.10809326171875 16.6528434753418 34.80137252807617 15.33513641357422 34.80137252807617 13.7099666595459 C 34.80137252807617 12.08479881286621 36.11907577514648 10.76709175109863 37.74424362182617 10.76709175109863 C 39.36941528320312 10.76709175109863 40.68711853027344 12.08479881286621 40.68711853027344 13.7099666595459 Z M 49.0435676574707 16.6967658996582 C 48.85689163208008 12.7546329498291 47.95645904541016 9.262712478637695 45.06848907470703 6.385722160339355 C 42.19149780273438 3.508732080459595 38.69958114624023 2.608299732208252 34.75744247436523 2.41064453125 C 30.69451904296875 2.180045604705811 18.5167236328125 2.180045604705811 14.4537992477417 2.41064453125 C 10.52264499664307 2.597318649291992 7.03072452545166 3.497751474380493 4.142753601074219 6.374741077423096 C 1.254783511161804 9.251729965209961 0.3653314709663391 12.74365043640137 0.1676758676767349 16.68578720092773 C -0.06292259693145752 20.74871253967285 -0.06292259693145752 32.92650604248047 0.1676758676767349 36.98942947387695 C 0.3543508052825928 40.93156814575195 1.254782915115356 44.42348480224609 4.142753601074219 47.30047225952148 C 7.03072452545166 50.17746353149414 10.51166343688965 51.07789611816406 14.4537992477417 51.27555084228516 C 18.5167236328125 51.50614547729492 30.69451904296875 51.50614547729492 34.75744247436523 51.27555084228516 C 38.6995849609375 51.0888786315918 42.19150161743164 50.18843841552734 45.0684928894043 47.30047225952148 C 47.94548416137695 44.42347717285156 48.84592056274414 40.93156051635742 49.04357147216797 36.98942565917969 C 49.274169921875 32.9265022277832 49.274169921875 20.75969123840332 49.04357147216797 16.69676399230957 Z M 43.79470825195312 41.34883880615234 C 42.93820190429688 43.50109481811523 41.28008651733398 45.15920639038086 39.11685562133789 46.02669143676758 C 35.87749481201172 47.31145477294922 28.19087982177734 47.01497268676758 24.61111259460449 47.01497268676758 C 21.03134727478027 47.01497268676758 13.33375072479248 47.30047225952148 10.10537052154541 46.02669143676758 C 7.953117847442627 45.17018127441406 6.295005798339844 43.51206588745117 5.427515983581543 41.34883880615234 C 4.142753124237061 38.10947799682617 4.439237594604492 30.42286682128906 4.439237594604492 26.84310340881348 C 4.439237594604492 23.26333618164062 4.153734683990479 15.56573677062988 5.427515983581543 12.33736038208008 C 6.284024715423584 10.18510818481445 7.942137718200684 8.526994705200195 10.10537052154541 7.659503936767578 C 13.34472942352295 6.374742031097412 21.03134727478027 6.671225547790527 24.61111259460449 6.671225547790527 C 28.19087982177734 6.671225547790527 35.88847732543945 6.385722160339355 39.11685562133789 7.659503936767578 C 41.26910400390625 8.516013145446777 42.92721939086914 10.17412567138672 43.79470825195312 12.33736038208008 C 45.07947540283203 15.57672119140625 44.78298950195312 23.26333427429199 44.78298950195312 26.84310340881348 C 44.78298950195312 30.42286682128906 45.07947540283203 38.12046051025391 43.79470825195312 41.34883880615234 Z">
-			</path>
-		</svg>
-	</div>
-	<div id="Group_349">
-		<div id="n__haloradostudio">
-			<span>  haloradostudio</span>
-		</div>
-		<svg class="Icon_simple-wechat" viewBox="-0.001 3.06 52.419 49">
-			<path id="Icon_simple-wechat" d="M 51.41536712646484 29.40139579772949 C 50.08526992797852 26.00658988952637 47.5757942199707 23.31043434143066 44.66226196289062 21.64993286132812 C 39.52099227905273 18.71761131286621 33.12826919555664 18.73483276367188 28.00010299682617 21.72373199462891 C 24.43791007995605 23.78275489807129 21.46322631835938 27.47275543212891 20.62018203735352 31.96225547790527 C 19.92564964294434 35.26850128173828 20.54810523986816 38.82811737060547 22.1053409576416 41.70631408691406 C 24.42262077331543 46.04084014892578 28.61163902282715 48.80833435058594 32.96228408813477 49.69640350341797 C 36.11386871337891 50.41717529296875 39.37466430664062 49.9891357421875 42.43671035766602 48.99530029296875 C 44.27568817138672 49.79725646972656 45.91372680664062 51.09613800048828 47.69591903686523 52.06046295166016 C 47.23508071899414 50.32124328613281 46.74366760253906 48.60169982910156 46.21949768066406 46.88954162597656 C 48.22008514404297 45.29054260253906 50.03285980224609 43.29547119140625 51.12051391601562 40.79119110107422 C 52.74545669555664 37.310302734375 52.84372711181641 32.99053192138672 51.41536712646484 29.40139579772949 Z M 29.74079895019531 6.11502742767334 C 24.29157829284668 2.661184787750244 17.50572204589844 2.142126083374023 11.64371395111084 4.528326988220215 C 7.791038990020752 6.090429306030273 4.305286884307861 8.993228912353516 2.151808500289917 12.94153213500977 C 0.197078749537468 16.50852966308594 -0.5345799326896667 20.95621109008789 0.4067479372024536 25.037353515625 C 1.352444052696228 29.56375694274902 4.143666744232178 33.35952758789062 7.531137466430664 35.89333343505859 C 6.875920295715332 37.98433685302734 6.253465175628662 40.07288360595703 5.66377067565918 42.17864227294922 C 7.79322338104248 40.92404174804688 9.922677993774414 39.61285400390625 12.05431747436523 38.33857727050781 C 14.60966110229492 39.26107788085938 17.32881164550781 39.71372222900391 20.04796028137207 39.61286926269531 C 19.32722091674805 37.29308319091797 19.16341972351074 34.77896118164062 19.49102401733398 32.35340118408203 C 19.9824390411377 28.98073768615723 21.62047958374023 25.89589691162109 23.84603500366211 23.61055564880371 C 27.61571502685547 19.63766098022461 32.95573043823242 17.96239471435547 38.03365707397461 18.3682975769043 C 37.08141326904297 13.11619567871094 33.80533218383789 8.67835521697998 29.68183135986328 6.117496490478516 L 29.74080276489258 6.117496490478516 Z M 33.5257682800293 30.68796730041504 C 33.06930160522461 32.29189300537109 31.00100326538086 32.7740478515625 29.9985179901123 31.55389213562012 C 28.89338493347168 30.42474937438965 29.32364845275879 28.06560707092285 30.77385520935059 27.56131172180176 C 32.376953125 26.79870796203613 34.22903060913086 28.8823299407959 33.5257682800293 30.68796730041504 Z M 43.99831390380859 30.9142894744873 C 43.43919372558594 32.35585021972656 41.50630950927734 32.69287109375 40.55624389648438 31.57848930358887 C 40.09977340698242 31.10862922668457 39.96654891967773 30.4001522064209 39.80492782592773 29.78269004821777 C 40.03206634521484 28.6560115814209 40.72222900390625 27.48751068115234 41.83609771728516 27.43339157104492 C 43.37585830688477 27.19231224060059 44.75399780273438 29.33497047424316 43.96555328369141 30.9167537689209 L 43.99831008911133 30.9167537689209 Z M 28.37139511108398 15.03744888305664 C 28.38886642456055 17.40150833129883 25.58672523498535 18.87751197814941 24.01420402526855 17.27358818054199 C 22.38271522521973 15.95749092102051 22.84573554992676 12.75457000732422 24.76115036010742 12.09282875061035 C 26.47563552856445 11.31792640686035 28.50243759155273 12.93906784057617 28.36702919006348 15.0079288482666 L 28.37139511108398 15.03744888305664 Z M 15.1382007598877 15.6376895904541 C 14.76254463195801 17.69179153442383 12.3185863494873 18.68317222595215 10.88803005218506 17.30557250976562 C 9.230331420898438 15.98947143554688 9.695536613464355 12.72750854492188 11.64153099060059 12.06331157684326 C 13.54821014404297 11.23675060272217 15.71479320526123 13.41630935668945 15.1382007598877 15.6376895904541 Z">
-			</path>
-		</svg>
-	</div>
-	<div id="Group_150">
-		<div id="Lorem_ipsum_dolor_sit__consetc">
-			<span>Lorem ipsum dolor sit @ conset.com</span>
-		</div>
-		<svg class="Icon_material-email" viewBox="3 6 45.527 36.422">
-			<path id="Icon_material-email" d="M 43.974609375 6 L 7.552734375 6 C 5.048730373382568 6 3.022763729095459 8.04872989654541 3.022763729095459 10.552734375 L 3 37.869140625 C 3 40.37314224243164 5.048730373382568 42.421875 7.552734375 42.421875 L 43.974609375 42.421875 C 46.47861099243164 42.421875 48.52734375 40.37314224243164 48.52734375 37.869140625 L 48.52734375 10.552734375 C 48.52734375 8.04872989654541 46.47861099243164 6 43.974609375 6 Z M 43.974609375 15.10546875 L 25.763671875 26.4873046875 L 7.552734375 15.10546875 L 7.552734375 10.552734375 L 25.763671875 21.9345703125 L 43.974609375 10.552734375 L 43.974609375 15.10546875 Z">
-			</path>
-		</svg>
-	</div>
-	<div id="Component_26__12" class="Component_26___12">
-		<svg class="Rectangle_30">
-			<rect id="Rectangle_30" rx="0" ry="0" x="0" y="0" width="112" height="7">
-			</rect>
-		</svg>
-	</div>
-	<div id="Component_23__16" class="Component_23___16">
-		<div id="Group_186">
-			<svg class="Rectangle_31">
-				<rect id="Rectangle_31" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+		<div id="Component_1__15" class="Component_1___15">
+			<svg class="Rectangle_6_cp">
+				<rect id="Rectangle_6_cp" rx="15" ry="15" x="0" y="0" width="223" height="83">
 				</rect>
 			</svg>
-			<svg class="Rectangle_32">
-				<rect id="Rectangle_32" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-				</rect>
-			</svg>
-		</div>
-		<div id="Group_186_d">
-			<svg class="Rectangle_31_d">
-				<rect id="Rectangle_31_d" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-				</rect>
-			</svg>
-			<svg class="Rectangle_32_d">
-				<rect id="Rectangle_32_d" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-				</rect>
-			</svg>
-		</div>
-		<div id="Group_186_ea">
-			<svg class="Rectangle_31_ea">
-				<rect id="Rectangle_31_ea" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-				</rect>
-			</svg>
-			<svg class="Rectangle_32_ea">
-				<rect id="Rectangle_32_ea" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-				</rect>
-			</svg>
-		</div>
-		<div id="Group_186_eb">
-			<svg class="Rectangle_31_eb">
-				<rect id="Rectangle_31_eb" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-				</rect>
-			</svg>
-			<svg class="Rectangle_32_ec">
-				<rect id="Rectangle_32_ec" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-				</rect>
-			</svg>
-		</div>
-		<div id="Group_186_ed">
-			<svg class="Rectangle_31_ee">
-				<rect id="Rectangle_31_ee" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-				</rect>
-			</svg>
-			<svg class="Rectangle_32_ef">
-				<rect id="Rectangle_32_ef" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-				</rect>
-			</svg>
-		</div>
-	</div>
-	<div id="Component_23__17" class="Component_23___17">
-		<div id="Group_186_eh">
-			<svg class="Rectangle_31_ei">
-				<rect id="Rectangle_31_ei" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-				</rect>
-			</svg>
-			<svg class="Rectangle_32_ej">
-				<rect id="Rectangle_32_ej" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-				</rect>
-			</svg>
-		</div>
-		<div id="Group_186_ek">
-			<svg class="Rectangle_31_el">
-				<rect id="Rectangle_31_el" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-				</rect>
-			</svg>
-			<svg class="Rectangle_32_em">
-				<rect id="Rectangle_32_em" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-				</rect>
-			</svg>
-		</div>
-		<div id="Group_186_en">
-			<svg class="Rectangle_31_eo">
-				<rect id="Rectangle_31_eo" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-				</rect>
-			</svg>
-			<svg class="Rectangle_32_ep">
-				<rect id="Rectangle_32_ep" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-				</rect>
-			</svg>
-		</div>
-		<div id="Group_186_eq">
-			<svg class="Rectangle_31_er">
-				<rect id="Rectangle_31_er" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-				</rect>
-			</svg>
-			<svg class="Rectangle_32_es">
-				<rect id="Rectangle_32_es" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-				</rect>
-			</svg>
-		</div>
-		<div id="Group_186_et">
-			<svg class="Rectangle_31_eu">
-				<rect id="Rectangle_31_eu" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-				</rect>
-			</svg>
-			<svg class="Rectangle_32_ev">
-				<rect id="Rectangle_32_ev" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-				</rect>
-			</svg>
-		</div>
-	</div>
-	<div id="Component_1__16" class="Component_1___16">
-		<svg class="Rectangle_6_ex">
-			<rect id="Rectangle_6_ex" rx="15" ry="15" x="0" y="0" width="223" height="83">
-			</rect>
-		</svg>
-		<div id="Request_ey">
-			<span>Request</span>
-		</div>
-	</div>
-	<div id="Group_577">
-		<svg class="Rectangle_44">
-			<rect id="Rectangle_44" rx="0" ry="0" x="0" y="0" width="499" height="737">
-			</rect>
-		</svg>
-		<svg class="Rectangle_47">
-			<rect id="Rectangle_47" rx="0" ry="0" x="0" y="0" width="830" height="709">
-			</rect>
-		</svg>
-		<svg class="Rectangle_48">
-			<rect id="Rectangle_48" rx="0" ry="0" x="0" y="0" width="797" height="734">
-			</rect>
-		</svg>
-		<svg class="Rectangle_46">
-			<rect id="Rectangle_46" rx="0" ry="0" x="0" y="0" width="418" height="723">
-			</rect>
-		</svg>
-		<svg class="Rectangle_45">
-			<rect id="Rectangle_45" rx="0" ry="0" x="0" y="0" width="418" height="689">
-			</rect>
-		</svg>
-	</div>
-	<div id="Group_8">
-		<svg class="Rectangle_16">
-			<rect id="Rectangle_16" rx="15" ry="15" x="0" y="0" width="559" height="49">
-			</rect>
-		</svg>
-		<svg class="Rectangle_16_e">
-			<rect id="Rectangle_16_e" rx="15" ry="15" x="0" y="0" width="559" height="49">
-			</rect>
-		</svg>
-		<svg class="Rectangle_16_fa">
-			<rect id="Rectangle_16_fa" rx="15" ry="15" x="0" y="0" width="559" height="49">
-			</rect>
-		</svg>
-		<svg class="Rectangle_16_fb">
-			<rect id="Rectangle_16_fb" rx="15" ry="15" x="0" y="0" width="559" height="49">
-			</rect>
-		</svg>
-		<svg class="Rectangle_16_fc">
-			<rect id="Rectangle_16_fc" rx="15" ry="15" x="0" y="0" width="559" height="49">
-			</rect>
-		</svg>
-		<svg class="Rectangle_17">
-			<rect id="Rectangle_17" rx="15" ry="15" x="0" y="0" width="559" height="243">
-			</rect>
-		</svg>
-		<div id="Group_277">
-			<div id="Contact_fd">
-				<span>Contact</span>
-			</div>
-			<div id="Name">
-				<span>Name</span>
-			</div>
-			<div id="Phone">
-				<span>Phone</span>
-			</div>
-			<div id="Email">
-				<span>Email</span>
-			</div>
-			<div id="Request_fh">
+			<div id="Request">
 				<span>Request</span>
 			</div>
-			<div id="Size_op">
-				<span>Size (op)</span>
+		</div>
+		<div id="Lorem_ipsum_dolor_sit_amet_con_cr">
+			<span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</span>
+		</div>
+		<div id="Lorem_ipsum_dolor_sit_amet_con_cs">
+			<span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</span>
+		</div>
+		<img id="IMG_3623" src="Imag\IMG_3623.png">
+			
+		<img id="stilllife1" src="Imag\stilllife1.png">
+			
+		<img id="IMG_4507" src="Imag\IMG_4507.png">
+			
+		<svg class="Path_123" viewBox="0 305 1 1">
+			<path id="Path_123" d="M 0 305">
+			</path>
+		</svg>
+		<div id="Group_5">
+			<img id="juno2" src="Imag\juno2.png">
+				
+			<div id="Zoey_Zhang">
+				<span>Zoey Zhang</span>
 			</div>
-			<div id="Contant">
-				<span>Contant</span>
-			</div>
-			<div id="Component_5__25" class="Component_5___25">
-				<svg class="Rectangle_15">
-					<rect id="Rectangle_15" rx="15" ry="15" x="0" y="0" width="147" height="67">
-					</rect>
-				</svg>
-				<div id="Send">
-					<span>Send</span>
-				</div>
+			<div id="Juno">
+				<span>Juno</span>
 			</div>
 		</div>
-	</div>
-	<div>
-		<img class="Rectangle_7" src="../../Mural Art/Imag/Mural Art Front.jpg" alt="front">
-	</div>
-	
-	<div id="Group_424">
-		<div id="Group_36">
-			<svg class="Rectangle_14">
-				<rect id="Rectangle_14" rx="0" ry="0" x="0" y="0" width="1280" height="130">
+		<div id="Lorem_ipsum_dolor_sit_amet_con_c">
+			<span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</span>
+		</div>
+		<div id="Lorem_ipsum_dolor_sit_amet_con_da">
+			<span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</span>
+		</div>
+		<div id="Lorem_ipsum_dolor_sit_amet_con_db">
+			<span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</span>
+		</div>
+		
+		<div id="Group_149">
+			<div id="n_haloradostudio">
+				<span>@ haloradostudio</span>
+			</div>
+			<svg class="Icon_awesome-instagram" viewBox="-0.005 2.238 49.222 49.211">
+				<path id="Icon_awesome-instagram" d="M 24.61111259460449 14.22607040405273 C 17.62727355957031 14.22607040405273 11.9940824508667 19.85926246643066 11.9940824508667 26.84310340881348 C 11.9940824508667 33.82693862915039 17.62727355957031 39.46012878417969 24.61111259460449 39.46012878417969 C 31.59495162963867 39.46012878417969 37.22814178466797 33.82693862915039 37.22814178466797 26.84310340881348 C 37.22814178466797 19.8592643737793 31.59495162963867 14.22607040405273 24.61111259460449 14.22607040405273 Z M 24.61111259460449 35.04581451416016 C 20.09797096252441 35.04581451416016 16.40839767456055 31.36721992492676 16.40839767456055 26.84309959411621 C 16.40839767456055 22.31897354125977 20.08699226379395 18.640380859375 24.61111450195312 18.640380859375 C 29.1352367401123 18.640380859375 32.81383514404297 22.31897354125977 32.81383514404297 26.84309959411621 C 32.81383514404297 31.36721992492676 29.1242561340332 35.04581451416016 24.61111450195312 35.04581451416016 Z M 40.68711853027344 13.7099666595459 C 40.68711853027344 15.34611892700195 39.36941528320312 16.6528434753418 37.74424362182617 16.6528434753418 C 36.10809326171875 16.6528434753418 34.80137252807617 15.33513641357422 34.80137252807617 13.7099666595459 C 34.80137252807617 12.08479881286621 36.11907577514648 10.76709175109863 37.74424362182617 10.76709175109863 C 39.36941528320312 10.76709175109863 40.68711853027344 12.08479881286621 40.68711853027344 13.7099666595459 Z M 49.0435676574707 16.6967658996582 C 48.85689163208008 12.7546329498291 47.95645904541016 9.262712478637695 45.06848907470703 6.385722160339355 C 42.19149780273438 3.508732080459595 38.69958114624023 2.608299732208252 34.75744247436523 2.41064453125 C 30.69451904296875 2.180045604705811 18.5167236328125 2.180045604705811 14.4537992477417 2.41064453125 C 10.52264499664307 2.597318649291992 7.03072452545166 3.497751474380493 4.142753601074219 6.374741077423096 C 1.254783511161804 9.251729965209961 0.3653314709663391 12.74365043640137 0.1676758676767349 16.68578720092773 C -0.06292259693145752 20.74871253967285 -0.06292259693145752 32.92650604248047 0.1676758676767349 36.98942947387695 C 0.3543508052825928 40.93156814575195 1.254782915115356 44.42348480224609 4.142753601074219 47.30047225952148 C 7.03072452545166 50.17746353149414 10.51166343688965 51.07789611816406 14.4537992477417 51.27555084228516 C 18.5167236328125 51.50614547729492 30.69451904296875 51.50614547729492 34.75744247436523 51.27555084228516 C 38.6995849609375 51.0888786315918 42.19150161743164 50.18843841552734 45.0684928894043 47.30047225952148 C 47.94548416137695 44.42347717285156 48.84592056274414 40.93156051635742 49.04357147216797 36.98942565917969 C 49.274169921875 32.9265022277832 49.274169921875 20.75969123840332 49.04357147216797 16.69676399230957 Z M 43.79470825195312 41.34883880615234 C 42.93820190429688 43.50109481811523 41.28008651733398 45.15920639038086 39.11685562133789 46.02669143676758 C 35.87749481201172 47.31145477294922 28.19087982177734 47.01497268676758 24.61111259460449 47.01497268676758 C 21.03134727478027 47.01497268676758 13.33375072479248 47.30047225952148 10.10537052154541 46.02669143676758 C 7.953117847442627 45.17018127441406 6.295005798339844 43.51206588745117 5.427515983581543 41.34883880615234 C 4.142753124237061 38.10947799682617 4.439237594604492 30.42286682128906 4.439237594604492 26.84310340881348 C 4.439237594604492 23.26333618164062 4.153734683990479 15.56573677062988 5.427515983581543 12.33736038208008 C 6.284024715423584 10.18510818481445 7.942137718200684 8.526994705200195 10.10537052154541 7.659503936767578 C 13.34472942352295 6.374742031097412 21.03134727478027 6.671225547790527 24.61111259460449 6.671225547790527 C 28.19087982177734 6.671225547790527 35.88847732543945 6.385722160339355 39.11685562133789 7.659503936767578 C 41.26910400390625 8.516013145446777 42.92721939086914 10.17412567138672 43.79470825195312 12.33736038208008 C 45.07947540283203 15.57672119140625 44.78298950195312 23.26333427429199 44.78298950195312 26.84310340881348 C 44.78298950195312 30.42286682128906 45.07947540283203 38.12046051025391 43.79470825195312 41.34883880615234 Z">
+				</path>
+			</svg>
+		</div>
+		<div id="Group_349">
+			<div id="n__haloradostudio">
+				<span>  haloradostudio</span>
+			</div>
+			<svg class="Icon_simple-wechat" viewBox="-0.001 3.06 52.419 49">
+				<path id="Icon_simple-wechat" d="M 51.41536712646484 29.40139579772949 C 50.08526992797852 26.00658988952637 47.5757942199707 23.31043434143066 44.66226196289062 21.64993286132812 C 39.52099227905273 18.71761131286621 33.12826919555664 18.73483276367188 28.00010299682617 21.72373199462891 C 24.43791007995605 23.78275489807129 21.46322631835938 27.47275543212891 20.62018203735352 31.96225547790527 C 19.92564964294434 35.26850128173828 20.54810523986816 38.82811737060547 22.1053409576416 41.70631408691406 C 24.42262077331543 46.04084014892578 28.61163902282715 48.80833435058594 32.96228408813477 49.69640350341797 C 36.11386871337891 50.41717529296875 39.37466430664062 49.9891357421875 42.43671035766602 48.99530029296875 C 44.27568817138672 49.79725646972656 45.91372680664062 51.09613800048828 47.69591903686523 52.06046295166016 C 47.23508071899414 50.32124328613281 46.74366760253906 48.60169982910156 46.21949768066406 46.88954162597656 C 48.22008514404297 45.29054260253906 50.03285980224609 43.29547119140625 51.12051391601562 40.79119110107422 C 52.74545669555664 37.310302734375 52.84372711181641 32.99053192138672 51.41536712646484 29.40139579772949 Z M 29.74079895019531 6.11502742767334 C 24.29157829284668 2.661184787750244 17.50572204589844 2.142126083374023 11.64371395111084 4.528326988220215 C 7.791038990020752 6.090429306030273 4.305286884307861 8.993228912353516 2.151808500289917 12.94153213500977 C 0.197078749537468 16.50852966308594 -0.5345799326896667 20.95621109008789 0.4067479372024536 25.037353515625 C 1.352444052696228 29.56375694274902 4.143666744232178 33.35952758789062 7.531137466430664 35.89333343505859 C 6.875920295715332 37.98433685302734 6.253465175628662 40.07288360595703 5.66377067565918 42.17864227294922 C 7.79322338104248 40.92404174804688 9.922677993774414 39.61285400390625 12.05431747436523 38.33857727050781 C 14.60966110229492 39.26107788085938 17.32881164550781 39.71372222900391 20.04796028137207 39.61286926269531 C 19.32722091674805 37.29308319091797 19.16341972351074 34.77896118164062 19.49102401733398 32.35340118408203 C 19.9824390411377 28.98073768615723 21.62047958374023 25.89589691162109 23.84603500366211 23.61055564880371 C 27.61571502685547 19.63766098022461 32.95573043823242 17.96239471435547 38.03365707397461 18.3682975769043 C 37.08141326904297 13.11619567871094 33.80533218383789 8.67835521697998 29.68183135986328 6.117496490478516 L 29.74080276489258 6.117496490478516 Z M 33.5257682800293 30.68796730041504 C 33.06930160522461 32.29189300537109 31.00100326538086 32.7740478515625 29.9985179901123 31.55389213562012 C 28.89338493347168 30.42474937438965 29.32364845275879 28.06560707092285 30.77385520935059 27.56131172180176 C 32.376953125 26.79870796203613 34.22903060913086 28.8823299407959 33.5257682800293 30.68796730041504 Z M 43.99831390380859 30.9142894744873 C 43.43919372558594 32.35585021972656 41.50630950927734 32.69287109375 40.55624389648438 31.57848930358887 C 40.09977340698242 31.10862922668457 39.96654891967773 30.4001522064209 39.80492782592773 29.78269004821777 C 40.03206634521484 28.6560115814209 40.72222900390625 27.48751068115234 41.83609771728516 27.43339157104492 C 43.37585830688477 27.19231224060059 44.75399780273438 29.33497047424316 43.96555328369141 30.9167537689209 L 43.99831008911133 30.9167537689209 Z M 28.37139511108398 15.03744888305664 C 28.38886642456055 17.40150833129883 25.58672523498535 18.87751197814941 24.01420402526855 17.27358818054199 C 22.38271522521973 15.95749092102051 22.84573554992676 12.75457000732422 24.76115036010742 12.09282875061035 C 26.47563552856445 11.31792640686035 28.50243759155273 12.93906784057617 28.36702919006348 15.0079288482666 L 28.37139511108398 15.03744888305664 Z M 15.1382007598877 15.6376895904541 C 14.76254463195801 17.69179153442383 12.3185863494873 18.68317222595215 10.88803005218506 17.30557250976562 C 9.230331420898438 15.98947143554688 9.695536613464355 12.72750854492188 11.64153099060059 12.06331157684326 C 13.54821014404297 11.23675060272217 15.71479320526123 13.41630935668945 15.1382007598877 15.6376895904541 Z">
+				</path>
+			</svg>
+		</div>
+		<div id="Group_150">
+			<div id="Lorem_ipsum_dolor_sit__consetc">
+				<span>Lorem ipsum dolor sit @ conset.com</span>
+			</div>
+			<svg class="Icon_material-email" viewBox="3 6 45.527 36.422">
+				<path id="Icon_material-email" d="M 43.974609375 6 L 7.552734375 6 C 5.048730373382568 6 3.022763729095459 8.04872989654541 3.022763729095459 10.552734375 L 3 37.869140625 C 3 40.37314224243164 5.048730373382568 42.421875 7.552734375 42.421875 L 43.974609375 42.421875 C 46.47861099243164 42.421875 48.52734375 40.37314224243164 48.52734375 37.869140625 L 48.52734375 10.552734375 C 48.52734375 8.04872989654541 46.47861099243164 6 43.974609375 6 Z M 43.974609375 15.10546875 L 25.763671875 26.4873046875 L 7.552734375 15.10546875 L 7.552734375 10.552734375 L 25.763671875 21.9345703125 L 43.974609375 10.552734375 L 43.974609375 15.10546875 Z">
+				</path>
+			</svg>
+		</div>
+		<div id="Component_26__12" class="Component_26___12">
+			<svg class="Rectangle_30">
+				<rect id="Rectangle_30" rx="0" ry="0" x="0" y="0" width="112" height="7">
 				</rect>
 			</svg>
 		</div>
-		<div id="Halorado_2022">
-			<span>Halorado 2022</span>
+		<div id="Component_23__16" class="Component_23___16">
+			<div id="Group_186">
+				<svg class="Rectangle_31">
+					<rect id="Rectangle_31" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+					</rect>
+				</svg>
+				<svg class="Rectangle_32">
+					<rect id="Rectangle_32" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+					</rect>
+				</svg>
+			</div>
+			<div id="Group_186_d">
+				<svg class="Rectangle_31_d">
+					<rect id="Rectangle_31_d" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+					</rect>
+				</svg>
+				<svg class="Rectangle_32_d">
+					<rect id="Rectangle_32_d" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+					</rect>
+				</svg>
+			</div>
+			<div id="Group_186_ea">
+				<svg class="Rectangle_31_ea">
+					<rect id="Rectangle_31_ea" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+					</rect>
+				</svg>
+				<svg class="Rectangle_32_ea">
+					<rect id="Rectangle_32_ea" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+					</rect>
+				</svg>
+			</div>
+			<div id="Group_186_eb">
+				<svg class="Rectangle_31_eb">
+					<rect id="Rectangle_31_eb" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+					</rect>
+				</svg>
+				<svg class="Rectangle_32_ec">
+					<rect id="Rectangle_32_ec" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+					</rect>
+				</svg>
+			</div>
+			<div id="Group_186_ed">
+				<svg class="Rectangle_31_ee">
+					<rect id="Rectangle_31_ee" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+					</rect>
+				</svg>
+				<svg class="Rectangle_32_ef">
+					<rect id="Rectangle_32_ef" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+					</rect>
+				</svg>
+			</div>
 		</div>
-		<div id="Artwork_10" class="Artwork_10">
-			<svg class="Artwork_10_fu" viewBox="-43.138 -29.382 86.275 58.765">
-				</null>
+		<div id="Component_23__17" class="Component_23___17">
+			<div id="Group_186_eh">
+				<svg class="Rectangle_31_ei">
+					<rect id="Rectangle_31_ei" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+					</rect>
+				</svg>
+				<svg class="Rectangle_32_ej">
+					<rect id="Rectangle_32_ej" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+					</rect>
+				</svg>
+			</div>
+			<div id="Group_186_ek">
+				<svg class="Rectangle_31_el">
+					<rect id="Rectangle_31_el" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+					</rect>
+				</svg>
+				<svg class="Rectangle_32_em">
+					<rect id="Rectangle_32_em" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+					</rect>
+				</svg>
+			</div>
+			<div id="Group_186_en">
+				<svg class="Rectangle_31_eo">
+					<rect id="Rectangle_31_eo" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+					</rect>
+				</svg>
+				<svg class="Rectangle_32_ep">
+					<rect id="Rectangle_32_ep" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+					</rect>
+				</svg>
+			</div>
+			<div id="Group_186_eq">
+				<svg class="Rectangle_31_er">
+					<rect id="Rectangle_31_er" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+					</rect>
+				</svg>
+				<svg class="Rectangle_32_es">
+					<rect id="Rectangle_32_es" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+					</rect>
+				</svg>
+			</div>
+			<div id="Group_186_et">
+				<svg class="Rectangle_31_eu">
+					<rect id="Rectangle_31_eu" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+					</rect>
+				</svg>
+				<svg class="Rectangle_32_ev">
+					<rect id="Rectangle_32_ev" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+					</rect>
+				</svg>
+			</div>
+		</div>
+		<div id="Component_1__16" class="Component_1___16">
+			<svg class="Rectangle_6_ex">
+				<rect id="Rectangle_6_ex" rx="15" ry="15" x="0" y="0" width="223" height="83">
+				</rect>
 			</svg>
-				<div id="Group_66">
-					<div id="Group_58">
-						<div id="Group_54">
-							<div id="Group_48">
-								<svg class="Path_17" viewBox="8.4 37.475 8.077 9.036">
-									<path id="Path_17" d="M 16.29580688476562 41.96859359741211 C 16.41736221313477 42.08361434936523 16.47748565673828 42.25745010375977 16.47748565673828 42.48880004882812 C 16.47748565673828 42.72798156738281 16.41736221313477 42.90050888061523 16.29580688476562 43.0076904296875 C 16.17555809020996 43.11617660522461 16.03178596496582 43.16976547241211 15.86317729949951 43.16976547241211 L 15.72593879699707 43.16976547241211 L 15.80174732208252 45.71848297119141 C 15.80958938598633 45.94198226928711 15.74554443359375 46.11843490600586 15.6069974899292 46.25044250488281 C 15.46975803375244 46.3824577331543 15.28416061401367 46.44911575317383 15.05020141601562 46.44911575317383 C 14.80840015411377 46.44911575317383 14.6175708770752 46.3876838684082 14.48033332824707 46.26351928710938 C 14.343092918396 46.13935089111328 14.26990032196045 45.97074127197266 14.26075172424316 45.75508117675781 L 14.18624973297119 43.14362335205078 L 10.67947292327881 43.09395599365234 L 10.4415922164917 45.96551132202148 C 10.41675853729248 46.3288688659668 10.16580867767334 46.51054763793945 9.690046310424805 46.51054763793945 C 9.431253433227539 46.51054763793945 9.233891487121582 46.454345703125 9.095344543457031 46.34324264526367 C 8.958105087280273 46.23214721679688 8.892755508422852 46.06876754760742 8.901905059814453 45.85572052001953 L 9.126713752746582 43.06912231445312 L 9.001237869262695 43.06912231445312 C 8.818254470825195 43.06912231445312 8.67186450958252 43.0076904296875 8.563380241394043 42.88352203369141 C 8.454897880554199 42.76066207885742 8.400001525878906 42.59074783325195 8.400001525878906 42.37770080566406 C 8.400001525878906 42.16204071044922 8.458818435668945 41.99735260009766 8.575145721435547 41.88233184814453 C 8.692778587341309 41.76731109619141 8.847007751464844 41.70849609375 9.039142608642578 41.70849609375 L 9.239118576049805 41.70849609375 L 9.527973175048828 38.13114547729492 C 9.543657302856445 37.92462921142578 9.62469482421875 37.76517105102539 9.772390365600586 37.64884948730469 C 9.91746997833252 37.5338249206543 10.1069917678833 37.47500610351562 10.34095096588135 37.47500610351562 C 10.59190082550049 37.47500610351562 10.78011512756348 37.54689025878906 10.90428352355957 37.69197082519531 C 11.02975845336914 37.83574676513672 11.08465480804443 38.02003860473633 11.06766223907471 38.24223709106445 L 10.78011512756348 41.73332977294922 L 14.14834785461426 41.76992797851562 L 14.03594017028809 38.19387817382812 C 14.02679347991943 37.98736953735352 14.09214496612549 37.81614685058594 14.2293815612793 37.67890548706055 C 14.36792755126953 37.54428100585938 14.55744743347168 37.47500610351562 14.79924964904785 37.47500610351562 C 15.03321075439453 37.47500610351562 15.2214241027832 37.54167175292969 15.36388969421387 37.67367935180664 C 15.50504970550537 37.80568695068359 15.57562923431396 37.96645355224609 15.57562923431396 38.15597152709961 L 15.68803596496582 41.79475784301758 L 15.87624740600586 41.79475784301758 C 16.03439903259277 41.79475784301758 16.17555809020996 41.85357666015625 16.29580688476562 41.96859359741211 Z">
-									</path>
-								</svg>
-							</div>
-							<div id="Group_49">
-								<svg class="Path_18" viewBox="15.806 37.58 7.126 8.948">
-									<path id="Path_18" d="M 22.83133316040039 45.68624877929688 C 22.85616874694824 45.75944519042969 22.86923599243164 45.82610321044922 22.86923599243164 45.88491058349609 C 22.86923599243164 46.09011840820312 22.7829704284668 46.24958801269531 22.61305999755859 46.36067962646484 C 22.44183540344238 46.47308349609375 22.2392463684082 46.52798461914062 22.00528526306152 46.52798461914062 C 21.82099533081055 46.52798461914062 21.66284561157227 46.49007415771484 21.52952194213867 46.41688537597656 C 21.39620780944824 46.34238433837891 21.30863761901855 46.23128509521484 21.26680946350098 46.082275390625 L 20.78974151611328 44.37398529052734 L 17.89727401733398 44.36222839355469 C 17.83975982666016 44.55957794189453 17.78355979919434 44.74779510498047 17.72866439819336 44.92555999755859 C 17.67376899719238 45.10200500488281 17.6267147064209 45.26668548583984 17.58489036560059 45.41438293457031 L 17.39667892456055 46.04568481445312 C 17.34700775146484 46.20122528076172 17.2568244934082 46.31885528564453 17.12742614746094 46.39727783203125 C 16.99803352355957 46.4757080078125 16.84641647338867 46.51491546630859 16.66996383666992 46.51491546630859 C 16.43600654602051 46.51491546630859 16.23341369628906 46.45871734619141 16.06350135803223 46.34238433837891 C 15.89227771759033 46.22736358642578 15.80601501464844 46.07444000244141 15.80601501464844 45.88491058349609 C 15.80601501464844 45.84309387207031 15.81516265869141 45.77251434326172 15.83084869384766 45.67317962646484 L 17.60972595214844 40.40059661865234 L 18.04758071899414 39.07656860351562 C 18.22402954101562 38.54067993164062 18.41485786437988 38.15641784667969 18.62398529052734 37.92637634277344 C 18.83310890197754 37.69503021240234 19.10366630554199 37.58001708984375 19.43826675415039 37.58001708984375 C 19.76371765136719 37.58001708984375 20.02251243591309 37.68326568603516 20.21464729309082 37.88847351074219 C 20.40678024291992 38.09498596191406 20.58584403991699 38.45311737060547 20.75314521789551 38.96546936035156 C 21.11127471923828 40.03854370117188 21.53344535827637 41.38741302490234 22.01704978942871 43.01335906982422 L 22.3686408996582 43.01335906982422 C 22.54378509521484 43.01335906982422 22.6810245513916 43.07086944580078 22.78166580200195 43.18589019775391 C 22.88100051879883 43.30221557617188 22.93197441101074 43.4708251953125 22.93197441101074 43.69432830810547 C 22.93197441101074 44.15570831298828 22.78558921813965 44.3857421875 22.49411582946777 44.3857421875 L 22.4313793182373 44.3857421875 L 22.83133316040039 45.68624877929688 Z M 20.40155410766602 42.988525390625 C 20.15190887451172 42.064453125 19.9349422454834 41.29591369628906 19.75064659118652 40.68553161621094 C 19.7336597442627 40.62932586669922 19.71797370910645 40.57965850830078 19.70098114013672 40.53783416748047 C 19.68399047851562 40.49600982666016 19.67222595214844 40.45549011230469 19.66307830810547 40.41366577148438 C 19.5964183807373 40.18231964111328 19.54283332824707 40.01371765136719 19.50100326538086 39.90523529052734 C 19.45787239074707 39.79936218261719 19.41735458374023 39.74577331542969 19.37553024291992 39.74577331542969 C 19.33370208740234 39.74577331542969 19.29187965393066 39.79936218261719 19.25005340576172 39.90523529052734 C 19.20822906494141 40.01371765136719 19.16640281677246 40.14572143554688 19.12457656860352 40.30255889892578 C 19.08275413513184 40.46725463867188 19.05399703979492 40.57442474365234 19.03700637817383 40.62409973144531 L 18.32336616516113 42.97545623779297 L 20.40155410766602 42.988525390625 Z">
-									</path>
-								</svg>
-							</div>
-							<div id="Group_50">
-								<svg class="Path_19" viewBox="22.417 37.655 5.937 8.739">
-									<path id="Path_19" d="M 23.33193397521973 46.14550399780273 C 22.96465492248535 45.98081970214844 22.72023963928223 45.70241928100586 22.59868621826172 45.31030654907227 C 22.47843933105469 44.91819763183594 22.41700744628906 44.31434631347656 22.41700744628906 43.4974479675293 C 22.41700744628906 42.56552886962891 22.46144676208496 41.69896697998047 22.54901695251465 40.89775848388672 C 22.63658714294434 40.09784317016602 22.76467895507812 39.20252990722656 22.93067169189453 38.21179962158203 C 22.95550537109375 38.04711151123047 23.03915405273438 37.91379165649414 23.18162155151367 37.81053161621094 C 23.32278251647949 37.70727920532227 23.51099586486816 37.65499877929688 23.74495697021484 37.65499877929688 C 23.97891616821289 37.65499877929688 24.15667152404785 37.71250915527344 24.27692031860352 37.82883453369141 C 24.39847564697266 37.94515991210938 24.45859718322754 38.09677886962891 24.45859718322754 38.28629684448242 C 24.45859718322754 38.37648391723633 24.45467758178711 38.44313812255859 24.44552803039551 38.48496627807617 C 24.25469779968262 39.64038848876953 24.11484527587891 40.56837463378906 24.02727508544922 41.27025985717773 C 23.93970489501953 41.97082901000977 23.89526557922363 42.7249870300293 23.89526557922363 43.5340461730957 C 23.89526557922363 43.97974395751953 23.91879272460938 44.30781173706055 23.96453857421875 44.51823806762695 C 24.01028251647949 44.72867965698242 24.10177612304688 44.87506484985352 24.23901557922363 44.9574089050293 C 24.37756156921387 45.03974914550781 24.59583473205566 45.08157348632812 24.89776229858398 45.08157348632812 C 25.51468276977539 45.08157348632812 26.41261863708496 44.97047805786133 27.58894920349121 44.7482795715332 C 27.6229305267334 44.7391357421875 27.67782783508301 44.73521041870117 27.75232887268066 44.73521041870117 C 27.9444637298584 44.73521041870117 28.09215545654297 44.80187225341797 28.19672393798828 44.93257141113281 C 28.30128479003906 45.0645866394043 28.35356330871582 45.22665786743164 28.35356330871582 45.41486740112305 C 28.35356330871582 45.77822494506836 28.08169746398926 46.01348876953125 27.53928184509277 46.12197494506836 C 27.08051300048828 46.21216201782227 26.66617965698242 46.28013229370117 26.30021286010742 46.32587432861328 C 25.93293380737305 46.37162399291992 25.52383232116699 46.39384078979492 25.07290458679199 46.39384078979492 C 24.27953147888184 46.39384078979492 23.69921112060547 46.31018829345703 23.33193397521973 46.14550399780273 Z">
-									</path>
-								</svg>
-							</div>
-							<div id="Group_51">
-								<svg class="Path_20" viewBox="35.361 37.665 7.238 8.775">
-									<path id="Path_20" d="M 42.44907760620117 45.48633193969727 C 42.44907760620117 45.69415283203125 42.38503646850586 45.87060546875 42.25563430786133 46.01960754394531 C 42.12623977661133 46.16729736328125 41.95632553100586 46.24180221557617 41.74850845336914 46.24180221557617 C 41.64002227783203 46.24180221557617 41.52630233764648 46.22350692749023 41.40998077392578 46.18690872192383 C 41.2923469543457 46.14900207519531 41.20085144042969 46.10587310791016 41.13419723510742 46.05619812011719 L 37.60258483886719 43.87737655639648 C 37.59474563598633 44.31522750854492 37.59082412719727 44.94129943847656 37.59082412719727 45.75950622558594 C 37.59082412719727 45.96601486206055 37.52546691894531 46.13069915771484 37.39607620239258 46.25356292724609 C 37.26668167114258 46.37773132324219 37.08500289916992 46.44046783447266 36.85103988647461 46.44046783447266 C 36.59224700927734 46.44046783447266 36.39619064331055 46.36989212036133 36.26287078857422 46.22872924804688 C 36.12955856323242 46.0888786315918 36.06289672851562 45.90066909790039 36.06289672851562 45.66017150878906 C 36.06289672851562 44.39757919311523 36.05374908447266 43.07747268676758 36.03806304931641 41.69985198974609 C 36.03806304931641 41.2136344909668 36.02891540527344 40.64768600463867 36.01323318481445 40.00463485717773 L 35.93741989135742 40.02815628051758 C 35.88775634765625 40.04514694213867 35.849853515625 40.0529899597168 35.82501983642578 40.0529899597168 C 35.51525115966797 40.0529899597168 35.36102294921875 39.79811477661133 35.36102294921875 39.2857551574707 C 35.36102294921875 39.12107086181641 35.41722106933594 38.98122024536133 35.53093719482422 38.86489486694336 C 35.64334106445312 38.74856948852539 35.79887390136719 38.63877487182617 36.00016021728516 38.53028869628906 L 36.00016021728516 38.34599685668945 C 36.00016021728516 37.89115524291992 36.29293823242188 37.6650390625 36.87718200683594 37.6650390625 C 37.26013946533203 37.6650390625 37.46142578125 37.74737930297852 37.47711181640625 37.91206359863281 L 37.47711181640625 37.96173095703125 C 38.0953369140625 37.78005218505859 38.59984970092773 37.68986511230469 38.99327087402344 37.68986511230469 C 39.72782897949219 37.68986511230469 40.36565780639648 37.80227279663086 40.90807723999023 38.02969741821289 C 41.45180511474609 38.25581359863281 41.86875534057617 38.57211685180664 42.16152572631836 38.977294921875 C 42.45299911499023 39.38117218017578 42.59938430786133 39.84778594970703 42.59938430786133 40.37451934814453 C 42.59938430786133 40.92870330810547 42.43862533569336 41.40054321289062 42.11708831787109 41.79265213012695 C 41.79556274414062 42.18476867675781 41.36032104492188 42.47884750366211 40.80874633789062 42.67751693725586 C 40.25848770141602 42.87618255615234 39.64025115966797 42.97421646118164 38.95536804199219 42.97421646118164 L 38.73055648803711 42.97421646118164 L 42.06088638305664 44.91777801513672 C 42.31968307495117 45.05892944335938 42.44907760620117 45.24845504760742 42.44907760620117 45.48633193969727 Z M 37.55291748046875 39.36026000976562 C 37.58559799194336 40.25165939331055 37.60258483886719 41.03195571899414 37.60258483886719 41.69985198974609 C 37.90320587158203 41.75736236572266 38.31230545043945 41.78611755371094 38.82988739013672 41.78611755371094 C 39.47295761108398 41.78611755371094 39.97616195678711 41.6645622253418 40.33951950073242 41.42145919799805 C 40.70156860351562 41.17704010009766 40.88324356079102 40.84113311767578 40.88324356079102 40.41242218017578 C 40.88324356079102 40.00724029541016 40.71725463867188 39.68309783935547 40.38264846801758 39.43476104736328 C 40.04935836791992 39.18773651123047 39.59843063354492 39.06225967407227 39.03117370605469 39.06225967407227 C 38.57109832763672 39.06225967407227 38.07834243774414 39.16289520263672 37.55291748046875 39.36026000976562 Z">
-									</path>
-								</svg>
-							</div>
-							<div id="Group_52">
-								<svg class="Path_21" viewBox="42.029 37.58 7.126 8.948">
-									<path id="Path_21" d="M 49.05434036254883 45.68624877929688 C 49.07917404174805 45.75944519042969 49.09224319458008 45.82610321044922 49.09224319458008 45.88491058349609 C 49.09224319458008 46.09011840820312 49.00728607177734 46.24958801269531 48.83606719970703 46.36067962646484 C 48.66484451293945 46.47308349609375 48.46225357055664 46.52798461914062 48.22829818725586 46.52798461914062 C 48.04531097412109 46.52798461914062 47.88584518432617 46.49007415771484 47.75253295898438 46.41688537597656 C 47.61921310424805 46.34238433837891 47.53164291381836 46.23128509521484 47.48982238769531 46.082275390625 L 47.01405334472656 44.37398529052734 L 44.12028121948242 44.36222839355469 C 44.06276702880859 44.55957794189453 44.00656890869141 44.74779510498047 43.9516716003418 44.92555999755859 C 43.8980827331543 45.10200500488281 43.84972381591797 45.26668548583984 43.80789947509766 45.41438293457031 L 43.61968231201172 46.04568481445312 C 43.57001495361328 46.20122528076172 43.47982788085938 46.31885528564453 43.35043334960938 46.39727783203125 C 43.22104263305664 46.4757080078125 43.06942367553711 46.51491546630859 42.89296722412109 46.51491546630859 C 42.65901565551758 46.51491546630859 42.45772933959961 46.45871734619141 42.2865104675293 46.34238433837891 C 42.11528778076172 46.22736358642578 42.02902221679688 46.07444000244141 42.02902221679688 45.88491058349609 C 42.02902221679688 45.84309387207031 42.03816986083984 45.77251434326172 42.05516052246094 45.67317962646484 L 43.83272933959961 40.40059661865234 L 44.27058792114258 39.07656860351562 C 44.44704055786133 38.54067993164062 44.63787078857422 38.15641784667969 44.84699249267578 37.92637634277344 C 45.05611801147461 37.69503021240234 45.3266716003418 37.58001708984375 45.66127395629883 37.58001708984375 C 45.98672103881836 37.58001708984375 46.24552154541016 37.68326568603516 46.43765640258789 37.88847351074219 C 46.62979125976562 38.09498596191406 46.80885696411133 38.45311737060547 46.97615432739258 38.96546936035156 C 47.33428192138672 40.03854370117188 47.75645446777344 41.38741302490234 48.24136734008789 43.01335906982422 L 48.59164810180664 43.01335906982422 C 48.76679229736328 43.01335906982422 48.90403366088867 43.07086944580078 49.00467300415039 43.18589019775391 C 49.10531997680664 43.30221557617188 49.15497970581055 43.4708251953125 49.15497970581055 43.69432830810547 C 49.15497970581055 44.15570831298828 49.00859451293945 44.3857421875 48.71712493896484 44.3857421875 L 48.65438842773438 44.3857421875 L 49.05434036254883 45.68624877929688 Z M 46.62455749511719 42.988525390625 C 46.37491989135742 42.064453125 46.1579475402832 41.29591369628906 45.97496032714844 40.68553161621094 C 45.9566650390625 40.62932586669922 45.94097900390625 40.57965850830078 45.92398452758789 40.53783416748047 C 45.9069938659668 40.49600982666016 45.89522933959961 40.45549011230469 45.88608551025391 40.41366577148438 C 45.81942749023438 40.18231964111328 45.76583862304688 40.01371765136719 45.7240104675293 39.90523529052734 C 45.68218994140625 39.79936218261719 45.64036178588867 39.74577331542969 45.59853744506836 39.74577331542969 C 45.55671310424805 39.74577331542969 45.51488876342773 39.79936218261719 45.47306060791016 39.90523529052734 C 45.43123626708984 40.01371765136719 45.38941192626953 40.14572143554688 45.34758758544922 40.30255889892578 C 45.30706405639648 40.46725463867188 45.27700424194336 40.57442474365234 45.260009765625 40.62409973144531 L 44.54637908935547 42.97545623779297 L 46.62455749511719 42.988525390625 Z">
-									</path>
-								</svg>
-							</div>
-							<div id="Group_53">
-								<svg class="Path_22" viewBox="48.756 37.513 7.313 8.825">
-									<path id="Path_22" d="M 54.70432662963867 39.02919006347656 C 55.61402130126953 39.71800231933594 56.06887817382812 40.68650817871094 56.06887817382812 41.93211364746094 C 56.06887817382812 42.815673828125 55.84144592285156 43.58812713623047 55.38660430908203 44.25210189819336 C 54.9317512512207 44.91738510131836 54.27953720092773 45.42974472045898 53.43258285522461 45.7931022644043 C 52.58563232421875 46.15645599365234 51.59750747680664 46.33813095092773 50.47084045410156 46.33813095092773 L 49.63172149658203 46.33813095092773 C 49.33110809326172 46.33813095092773 49.11283111572266 46.28716278076172 48.97428131103516 46.18259811401367 C 48.83704376220703 46.079345703125 48.76777267456055 45.90549468994141 48.76777267456055 45.65716934204102 C 48.76777267456055 45.22061920166016 48.96774673461914 45.00104141235352 49.36900329589844 45.00104141235352 L 49.59511947631836 45.00104141235352 L 49.43174743652344 39.07232666015625 L 49.35724258422852 39.07232666015625 C 49.17295074462891 39.07232666015625 49.02656555175781 39.0213508605957 48.91808319091797 38.91809463500977 C 48.80960083007812 38.8148307800293 48.75601196289062 38.65275573730469 48.75601196289062 38.42926025390625 C 48.75601196289062 38.18222808837891 48.81613159179688 38.0031623840332 48.93637847900391 37.8907585144043 C 49.05793380737305 37.7796630859375 49.21478271484375 37.72346115112305 49.40691757202148 37.72346115112305 L 49.55722045898438 37.72346115112305 C 49.67354583740234 37.5836067199707 49.87875747680664 37.51303100585938 50.17022323608398 37.51303100585938 C 50.48783493041992 37.51303100585938 50.70479965209961 37.60321426391602 50.82243347167969 37.78489303588867 C 52.49935913085938 37.92474365234375 53.79332733154297 38.34038162231445 54.70432662963867 39.02919006347656 Z M 52.8692512512207 44.50697708129883 C 53.38291931152344 44.25079727172852 53.78940582275391 43.90181732177734 54.09002304077148 43.46004104614258 C 54.39064407348633 43.01826095581055 54.54094696044922 42.50851821899414 54.54094696044922 41.93211364746094 C 54.54094696044922 40.34014129638672 53.35154342651367 39.41084289550781 50.97274017333984 39.14682388305664 L 51.12305450439453 44.97620010375977 C 51.77395629882812 44.91869735717773 52.3555793762207 44.7618408203125 52.8692512512207 44.50697708129883 Z">
-									</path>
-								</svg>
-							</div>
-						</div>
-						<div id="Group_57">
-							<div id="Group_55">
-								<svg class="Path_23" viewBox="28.043 37.253 8.268 9.604">
-									<path id="Path_23" d="M 31.84129524230957 46.85712051391602 C 30.19443321228027 46.85712051391602 29.07168769836426 45.99186325073242 28.5109691619873 45.0115852355957 C 27.77902984619141 43.72938537597656 27.91758155822754 42.19100189208984 28.84165191650391 41.35449981689453 C 29.16056632995605 41.06563949584961 29.30956649780273 40.17686462402344 29.32917404174805 39.3900260925293 C 29.29780578613281 39.35342788696289 29.27035903930664 39.3142204284668 29.24552345275879 39.27108764648438 C 29.0324764251709 38.89596176147461 29.03771018981934 38.45026397705078 29.25859451293945 38.07906341552734 C 29.57620429992676 37.54318237304688 30.26762962341309 37.27001190185547 31.1407299041748 37.25302124023438 C 31.98246002197266 37.26870346069336 34.12599945068359 37.64774322509766 35.84082794189453 40.8016242980957 C 35.90356826782227 40.93624877929688 36.75967788696289 42.86281204223633 35.99636459350586 44.56719207763672 C 35.56504440307617 45.53047943115234 34.73638534545898 46.20752334594727 33.53521728515625 46.58133697509766 C 32.91960144042969 46.77346801757812 32.35496520996094 46.85712051391602 31.84129524230957 46.85712051391602 Z M 30.95904922485352 38.89073944091797 C 30.99172401428223 39.70894241333008 30.95251274108887 41.64727783203125 29.93825340270996 42.56481552124023 C 29.5958080291748 42.87589263916016 29.59188842773438 43.60913467407227 29.92910575866699 44.20122528076172 C 30.19182014465332 44.65868377685547 31.01917266845703 45.65073394775391 33.04899978637695 45.02204132080078 C 33.79140090942383 44.79069900512695 34.26715850830078 44.4260368347168 34.50242614746094 43.90583038330078 C 34.96772766113281 42.87850189208984 34.38479232788086 41.54140472412109 34.37825393676758 41.52702713012695 C 33.32348251342773 39.59130859375 32.12361907958984 39.0684928894043 31.50539207458496 38.9351806640625 C 31.28450012207031 38.88812637329102 31.10282325744629 38.87897872924805 30.95904922485352 38.89073944091797 Z">
-									</path>
-								</svg>
-							</div>
-							<div id="Group_56">
-								<svg class="Path_24" viewBox="54.963 37.611 8.268 9.605">
-									<path id="Path_24" d="M 58.76259994506836 47.21640777587891 C 57.11443328857422 47.21640777587891 55.99168395996094 46.35115051269531 55.43096542358398 45.37087249755859 C 54.69903182983398 44.08736419677734 54.83757019042969 42.54898071289062 55.76164627075195 41.71378326416016 C 56.08056259155273 41.42362594604492 56.22956085205078 40.53483581542969 56.24916839599609 39.74931335449219 C 56.21780395507812 39.71140670776367 56.19035720825195 39.67219543457031 56.1655158996582 39.62906265258789 C 55.95247650146484 39.25394058227539 55.95769882202148 38.80824661254883 56.17859268188477 38.43704223632812 C 56.4962043762207 37.90246963500977 57.20461273193359 37.60838317871094 58.06072235107422 37.61100006103516 C 58.9024543762207 37.62799072265625 61.04468154907227 38.00703430175781 62.76082229614258 41.16090774536133 C 62.82356643676758 41.29422760009766 63.67966842651367 43.22079467773438 62.91636276245117 44.92647933959961 C 62.48504257202148 45.88846206665039 61.6563835144043 46.56681442260742 60.45521926879883 46.94062042236328 C 59.83960342407227 47.13144683837891 59.27495956420898 47.21640777587891 58.76259994506836 47.21640777587891 Z M 57.87904357910156 39.24871444702148 C 57.91172027587891 40.06692504882812 57.87251281738281 42.00525283813477 56.85824203491211 42.92409515380859 C 56.51580810546875 43.23517990112305 56.51187896728516 43.96710968017578 56.84910202026367 44.55920028686523 C 57.11181259155273 45.01667022705078 57.94178009033203 46.01131439208984 59.96899795532227 45.3800163269043 C 60.71138763427734 45.14998626708984 61.18715667724609 44.78401184082031 61.42242050170898 44.26381301879883 C 61.88772583007812 43.23778533935547 61.30348205566406 41.89937973022461 61.29825592041016 41.88631057739258 C 60.24216461181641 39.94928741455078 59.04361724853516 39.42778015136719 58.42538833618164 39.29315567016602 C 58.20449447631836 39.24610137939453 58.01889419555664 39.23825454711914 57.87904357910156 39.24871444702148 Z">
-									</path>
-								</svg>
-							</div>
-						</div>
+			<div id="Request_ey">
+				<span>Request</span>
+			</div>
+		</div>
+		<div id="Group_577">
+			<svg class="Rectangle_44">
+				<rect id="Rectangle_44" rx="0" ry="0" x="0" y="0" width="499" height="737">
+				</rect>
+			</svg>
+			<svg class="Rectangle_47">
+				<rect id="Rectangle_47" rx="0" ry="0" x="0" y="0" width="830" height="709">
+				</rect>
+			</svg>
+			<svg class="Rectangle_48">
+				<rect id="Rectangle_48" rx="0" ry="0" x="0" y="0" width="797" height="734">
+				</rect>
+			</svg>
+			<svg class="Rectangle_46">
+				<rect id="Rectangle_46" rx="0" ry="0" x="0" y="0" width="418" height="723">
+				</rect>
+			</svg>
+			<svg class="Rectangle_45">
+				<rect id="Rectangle_45" rx="0" ry="0" x="0" y="0" width="418" height="689">
+				</rect>
+			</svg>
+		</div>
+		<div id="Group_8">
+			<svg class="Rectangle_16">
+				<rect id="Rectangle_16" rx="15" ry="15" x="0" y="0" width="559" height="49">
+				</rect>
+			</svg>
+			<svg class="Rectangle_16_e">
+				<rect id="Rectangle_16_e" rx="15" ry="15" x="0" y="0" width="559" height="49">
+				</rect>
+			</svg>
+			<svg class="Rectangle_16_fa">
+				<rect id="Rectangle_16_fa" rx="15" ry="15" x="0" y="0" width="559" height="49">
+				</rect>
+			</svg>
+			<svg class="Rectangle_16_fb">
+				<rect id="Rectangle_16_fb" rx="15" ry="15" x="0" y="0" width="559" height="49">
+				</rect>
+			</svg>
+			<svg class="Rectangle_16_fc">
+				<rect id="Rectangle_16_fc" rx="15" ry="15" x="0" y="0" width="559" height="49">
+				</rect>
+			</svg>
+			<svg class="Rectangle_17">
+				<rect id="Rectangle_17" rx="15" ry="15" x="0" y="0" width="559" height="243">
+				</rect>
+			</svg>
+			<div id="Group_277">
+				<div id="Contact_fd">
+					<span>Contact</span>
+				</div>
+				<div id="Name">
+					<span>Name</span>
+				</div>
+				<div id="Phone">
+					<span>Phone</span>
+				</div>
+				<div id="Email">
+					<span>Email</span>
+				</div>
+				<div id="Request_fh">
+					<span>Request</span>
+				</div>
+				<div id="Size_op">
+					<span>Size (op)</span>
+				</div>
+				<div id="Contant">
+					<span>Contant</span>
+				</div>
+				<div id="Component_5__25" class="Component_5___25">
+					<svg class="Rectangle_15">
+						<rect id="Rectangle_15" rx="15" ry="15" x="0" y="0" width="147" height="67">
+						</rect>
+					</svg>
+					<div id="Send">
+						<span>Send</span>
 					</div>
-					<div id="Group_65">
-						<div id="Group_63">
-							<div id="Group_60">
-								<svg class="Line_22" viewBox="0 0 4.485 8.519">
-									<path id="Line_22" d="M 4.484936237335205 0 L 0 8.51942253112793">
-									</path>
-								</svg>
-								<svg class="Line_23" viewBox="0 0 7.666 16.99">
-									<path id="Line_23" d="M 0 0 L 7.665874481201172 16.99026489257812">
-									</path>
-								</svg>
-								<div id="Group_59">
-									<svg class="Path_25" viewBox="36.064 8.334 34.207 30.276">
-										<path id="Path_25" d="M 47.10073852539062 8.333999633789062 L 36.64445114135742 26.63249778747559 C 36.64445114135742 26.63249778747559 35.33740997314453 29.2465705871582 36.64445114135742 30.55360794067383 C 37.95148468017578 31.86064338684082 39.98523330688477 31.04374694824219 41.58242797851562 29.49098968505859 C 43.17963027954102 27.93953895568848 45.793701171875 28.3839282989502 47.10073852539062 31.4293212890625 C 48.40777587890625 34.47471237182617 52.60597610473633 33.02913284301758 53.63591766357422 29.2465705871582 C 54.4502067565918 26.25607490539551 61.92514419555664 25.90579032897949 61.27424240112305 33.11017227172852 C 60.43381118774414 42.4254150390625 73.89235687255859 38.46640777587891 69.32035064697266 31.86064338684082 L 57.59101104736328 8.333999633789062 C 57.59101104736328 8.333999633789062 52.32888412475586 13.56214332580566 47.10073852539062 8.333999633789062 Z">
+				</div>
+			</div>
+		</div>
+		<div>
+			<img class="Rectangle_7" src="../../Mural Art/Imag/Mural Art Front.jpg" alt="front">
+		</div>
+		
+		<div id="Group_424">
+			<div id="Group_36">
+				<svg class="Rectangle_14">
+					<rect id="Rectangle_14" rx="0" ry="0" x="0" y="0" width="1280" height="130">
+					</rect>
+				</svg>
+			</div>
+			<div id="Halorado_2022">
+				<span>Halorado 2022</span>
+			</div>
+			<div id="Artwork_10" class="Artwork_10">
+				<svg class="Artwork_10_fu" viewBox="-43.138 -29.382 86.275 58.765">
+					</null>
+				</svg>
+					<div id="Group_66">
+						<div id="Group_58">
+							<div id="Group_54">
+								<div id="Group_48">
+									<svg class="Path_17" viewBox="8.4 37.475 8.077 9.036">
+										<path id="Path_17" d="M 16.29580688476562 41.96859359741211 C 16.41736221313477 42.08361434936523 16.47748565673828 42.25745010375977 16.47748565673828 42.48880004882812 C 16.47748565673828 42.72798156738281 16.41736221313477 42.90050888061523 16.29580688476562 43.0076904296875 C 16.17555809020996 43.11617660522461 16.03178596496582 43.16976547241211 15.86317729949951 43.16976547241211 L 15.72593879699707 43.16976547241211 L 15.80174732208252 45.71848297119141 C 15.80958938598633 45.94198226928711 15.74554443359375 46.11843490600586 15.6069974899292 46.25044250488281 C 15.46975803375244 46.3824577331543 15.28416061401367 46.44911575317383 15.05020141601562 46.44911575317383 C 14.80840015411377 46.44911575317383 14.6175708770752 46.3876838684082 14.48033332824707 46.26351928710938 C 14.343092918396 46.13935089111328 14.26990032196045 45.97074127197266 14.26075172424316 45.75508117675781 L 14.18624973297119 43.14362335205078 L 10.67947292327881 43.09395599365234 L 10.4415922164917 45.96551132202148 C 10.41675853729248 46.3288688659668 10.16580867767334 46.51054763793945 9.690046310424805 46.51054763793945 C 9.431253433227539 46.51054763793945 9.233891487121582 46.454345703125 9.095344543457031 46.34324264526367 C 8.958105087280273 46.23214721679688 8.892755508422852 46.06876754760742 8.901905059814453 45.85572052001953 L 9.126713752746582 43.06912231445312 L 9.001237869262695 43.06912231445312 C 8.818254470825195 43.06912231445312 8.67186450958252 43.0076904296875 8.563380241394043 42.88352203369141 C 8.454897880554199 42.76066207885742 8.400001525878906 42.59074783325195 8.400001525878906 42.37770080566406 C 8.400001525878906 42.16204071044922 8.458818435668945 41.99735260009766 8.575145721435547 41.88233184814453 C 8.692778587341309 41.76731109619141 8.847007751464844 41.70849609375 9.039142608642578 41.70849609375 L 9.239118576049805 41.70849609375 L 9.527973175048828 38.13114547729492 C 9.543657302856445 37.92462921142578 9.62469482421875 37.76517105102539 9.772390365600586 37.64884948730469 C 9.91746997833252 37.5338249206543 10.1069917678833 37.47500610351562 10.34095096588135 37.47500610351562 C 10.59190082550049 37.47500610351562 10.78011512756348 37.54689025878906 10.90428352355957 37.69197082519531 C 11.02975845336914 37.83574676513672 11.08465480804443 38.02003860473633 11.06766223907471 38.24223709106445 L 10.78011512756348 41.73332977294922 L 14.14834785461426 41.76992797851562 L 14.03594017028809 38.19387817382812 C 14.02679347991943 37.98736953735352 14.09214496612549 37.81614685058594 14.2293815612793 37.67890548706055 C 14.36792755126953 37.54428100585938 14.55744743347168 37.47500610351562 14.79924964904785 37.47500610351562 C 15.03321075439453 37.47500610351562 15.2214241027832 37.54167175292969 15.36388969421387 37.67367935180664 C 15.50504970550537 37.80568695068359 15.57562923431396 37.96645355224609 15.57562923431396 38.15597152709961 L 15.68803596496582 41.79475784301758 L 15.87624740600586 41.79475784301758 C 16.03439903259277 41.79475784301758 16.17555809020996 41.85357666015625 16.29580688476562 41.96859359741211 Z">
 										</path>
 									</svg>
-									<svg class="Path_26" viewBox="60.641 25.796 4.548 6.917">
-										<path id="Path_26" d="M 65.18952941894531 25.79601860046387 C 65.18952941894531 25.79601860046387 63.65900039672852 31.62670516967773 60.64104843139648 32.71284866333008">
+								</div>
+								<div id="Group_49">
+									<svg class="Path_18" viewBox="15.806 37.58 7.126 8.948">
+										<path id="Path_18" d="M 22.83133316040039 45.68624877929688 C 22.85616874694824 45.75944519042969 22.86923599243164 45.82610321044922 22.86923599243164 45.88491058349609 C 22.86923599243164 46.09011840820312 22.7829704284668 46.24958801269531 22.61305999755859 46.36067962646484 C 22.44183540344238 46.47308349609375 22.2392463684082 46.52798461914062 22.00528526306152 46.52798461914062 C 21.82099533081055 46.52798461914062 21.66284561157227 46.49007415771484 21.52952194213867 46.41688537597656 C 21.39620780944824 46.34238433837891 21.30863761901855 46.23128509521484 21.26680946350098 46.082275390625 L 20.78974151611328 44.37398529052734 L 17.89727401733398 44.36222839355469 C 17.83975982666016 44.55957794189453 17.78355979919434 44.74779510498047 17.72866439819336 44.92555999755859 C 17.67376899719238 45.10200500488281 17.6267147064209 45.26668548583984 17.58489036560059 45.41438293457031 L 17.39667892456055 46.04568481445312 C 17.34700775146484 46.20122528076172 17.2568244934082 46.31885528564453 17.12742614746094 46.39727783203125 C 16.99803352355957 46.4757080078125 16.84641647338867 46.51491546630859 16.66996383666992 46.51491546630859 C 16.43600654602051 46.51491546630859 16.23341369628906 46.45871734619141 16.06350135803223 46.34238433837891 C 15.89227771759033 46.22736358642578 15.80601501464844 46.07444000244141 15.80601501464844 45.88491058349609 C 15.80601501464844 45.84309387207031 15.81516265869141 45.77251434326172 15.83084869384766 45.67317962646484 L 17.60972595214844 40.40059661865234 L 18.04758071899414 39.07656860351562 C 18.22402954101562 38.54067993164062 18.41485786437988 38.15641784667969 18.62398529052734 37.92637634277344 C 18.83310890197754 37.69503021240234 19.10366630554199 37.58001708984375 19.43826675415039 37.58001708984375 C 19.76371765136719 37.58001708984375 20.02251243591309 37.68326568603516 20.21464729309082 37.88847351074219 C 20.40678024291992 38.09498596191406 20.58584403991699 38.45311737060547 20.75314521789551 38.96546936035156 C 21.11127471923828 40.03854370117188 21.53344535827637 41.38741302490234 22.01704978942871 43.01335906982422 L 22.3686408996582 43.01335906982422 C 22.54378509521484 43.01335906982422 22.6810245513916 43.07086944580078 22.78166580200195 43.18589019775391 C 22.88100051879883 43.30221557617188 22.93197441101074 43.4708251953125 22.93197441101074 43.69432830810547 C 22.93197441101074 44.15570831298828 22.78558921813965 44.3857421875 22.49411582946777 44.3857421875 L 22.4313793182373 44.3857421875 L 22.83133316040039 45.68624877929688 Z M 20.40155410766602 42.988525390625 C 20.15190887451172 42.064453125 19.9349422454834 41.29591369628906 19.75064659118652 40.68553161621094 C 19.7336597442627 40.62932586669922 19.71797370910645 40.57965850830078 19.70098114013672 40.53783416748047 C 19.68399047851562 40.49600982666016 19.67222595214844 40.45549011230469 19.66307830810547 40.41366577148438 C 19.5964183807373 40.18231964111328 19.54283332824707 40.01371765136719 19.50100326538086 39.90523529052734 C 19.45787239074707 39.79936218261719 19.41735458374023 39.74577331542969 19.37553024291992 39.74577331542969 C 19.33370208740234 39.74577331542969 19.29187965393066 39.79936218261719 19.25005340576172 39.90523529052734 C 19.20822906494141 40.01371765136719 19.16640281677246 40.14572143554688 19.12457656860352 40.30255889892578 C 19.08275413513184 40.46725463867188 19.05399703979492 40.57442474365234 19.03700637817383 40.62409973144531 L 18.32336616516113 42.97545623779297 L 20.40155410766602 42.988525390625 Z">
+										</path>
+									</svg>
+								</div>
+								<div id="Group_50">
+									<svg class="Path_19" viewBox="22.417 37.655 5.937 8.739">
+										<path id="Path_19" d="M 23.33193397521973 46.14550399780273 C 22.96465492248535 45.98081970214844 22.72023963928223 45.70241928100586 22.59868621826172 45.31030654907227 C 22.47843933105469 44.91819763183594 22.41700744628906 44.31434631347656 22.41700744628906 43.4974479675293 C 22.41700744628906 42.56552886962891 22.46144676208496 41.69896697998047 22.54901695251465 40.89775848388672 C 22.63658714294434 40.09784317016602 22.76467895507812 39.20252990722656 22.93067169189453 38.21179962158203 C 22.95550537109375 38.04711151123047 23.03915405273438 37.91379165649414 23.18162155151367 37.81053161621094 C 23.32278251647949 37.70727920532227 23.51099586486816 37.65499877929688 23.74495697021484 37.65499877929688 C 23.97891616821289 37.65499877929688 24.15667152404785 37.71250915527344 24.27692031860352 37.82883453369141 C 24.39847564697266 37.94515991210938 24.45859718322754 38.09677886962891 24.45859718322754 38.28629684448242 C 24.45859718322754 38.37648391723633 24.45467758178711 38.44313812255859 24.44552803039551 38.48496627807617 C 24.25469779968262 39.64038848876953 24.11484527587891 40.56837463378906 24.02727508544922 41.27025985717773 C 23.93970489501953 41.97082901000977 23.89526557922363 42.7249870300293 23.89526557922363 43.5340461730957 C 23.89526557922363 43.97974395751953 23.91879272460938 44.30781173706055 23.96453857421875 44.51823806762695 C 24.01028251647949 44.72867965698242 24.10177612304688 44.87506484985352 24.23901557922363 44.9574089050293 C 24.37756156921387 45.03974914550781 24.59583473205566 45.08157348632812 24.89776229858398 45.08157348632812 C 25.51468276977539 45.08157348632812 26.41261863708496 44.97047805786133 27.58894920349121 44.7482795715332 C 27.6229305267334 44.7391357421875 27.67782783508301 44.73521041870117 27.75232887268066 44.73521041870117 C 27.9444637298584 44.73521041870117 28.09215545654297 44.80187225341797 28.19672393798828 44.93257141113281 C 28.30128479003906 45.0645866394043 28.35356330871582 45.22665786743164 28.35356330871582 45.41486740112305 C 28.35356330871582 45.77822494506836 28.08169746398926 46.01348876953125 27.53928184509277 46.12197494506836 C 27.08051300048828 46.21216201782227 26.66617965698242 46.28013229370117 26.30021286010742 46.32587432861328 C 25.93293380737305 46.37162399291992 25.52383232116699 46.39384078979492 25.07290458679199 46.39384078979492 C 24.27953147888184 46.39384078979492 23.69921112060547 46.31018829345703 23.33193397521973 46.14550399780273 Z">
+										</path>
+									</svg>
+								</div>
+								<div id="Group_51">
+									<svg class="Path_20" viewBox="35.361 37.665 7.238 8.775">
+										<path id="Path_20" d="M 42.44907760620117 45.48633193969727 C 42.44907760620117 45.69415283203125 42.38503646850586 45.87060546875 42.25563430786133 46.01960754394531 C 42.12623977661133 46.16729736328125 41.95632553100586 46.24180221557617 41.74850845336914 46.24180221557617 C 41.64002227783203 46.24180221557617 41.52630233764648 46.22350692749023 41.40998077392578 46.18690872192383 C 41.2923469543457 46.14900207519531 41.20085144042969 46.10587310791016 41.13419723510742 46.05619812011719 L 37.60258483886719 43.87737655639648 C 37.59474563598633 44.31522750854492 37.59082412719727 44.94129943847656 37.59082412719727 45.75950622558594 C 37.59082412719727 45.96601486206055 37.52546691894531 46.13069915771484 37.39607620239258 46.25356292724609 C 37.26668167114258 46.37773132324219 37.08500289916992 46.44046783447266 36.85103988647461 46.44046783447266 C 36.59224700927734 46.44046783447266 36.39619064331055 46.36989212036133 36.26287078857422 46.22872924804688 C 36.12955856323242 46.0888786315918 36.06289672851562 45.90066909790039 36.06289672851562 45.66017150878906 C 36.06289672851562 44.39757919311523 36.05374908447266 43.07747268676758 36.03806304931641 41.69985198974609 C 36.03806304931641 41.2136344909668 36.02891540527344 40.64768600463867 36.01323318481445 40.00463485717773 L 35.93741989135742 40.02815628051758 C 35.88775634765625 40.04514694213867 35.849853515625 40.0529899597168 35.82501983642578 40.0529899597168 C 35.51525115966797 40.0529899597168 35.36102294921875 39.79811477661133 35.36102294921875 39.2857551574707 C 35.36102294921875 39.12107086181641 35.41722106933594 38.98122024536133 35.53093719482422 38.86489486694336 C 35.64334106445312 38.74856948852539 35.79887390136719 38.63877487182617 36.00016021728516 38.53028869628906 L 36.00016021728516 38.34599685668945 C 36.00016021728516 37.89115524291992 36.29293823242188 37.6650390625 36.87718200683594 37.6650390625 C 37.26013946533203 37.6650390625 37.46142578125 37.74737930297852 37.47711181640625 37.91206359863281 L 37.47711181640625 37.96173095703125 C 38.0953369140625 37.78005218505859 38.59984970092773 37.68986511230469 38.99327087402344 37.68986511230469 C 39.72782897949219 37.68986511230469 40.36565780639648 37.80227279663086 40.90807723999023 38.02969741821289 C 41.45180511474609 38.25581359863281 41.86875534057617 38.57211685180664 42.16152572631836 38.977294921875 C 42.45299911499023 39.38117218017578 42.59938430786133 39.84778594970703 42.59938430786133 40.37451934814453 C 42.59938430786133 40.92870330810547 42.43862533569336 41.40054321289062 42.11708831787109 41.79265213012695 C 41.79556274414062 42.18476867675781 41.36032104492188 42.47884750366211 40.80874633789062 42.67751693725586 C 40.25848770141602 42.87618255615234 39.64025115966797 42.97421646118164 38.95536804199219 42.97421646118164 L 38.73055648803711 42.97421646118164 L 42.06088638305664 44.91777801513672 C 42.31968307495117 45.05892944335938 42.44907760620117 45.24845504760742 42.44907760620117 45.48633193969727 Z M 37.55291748046875 39.36026000976562 C 37.58559799194336 40.25165939331055 37.60258483886719 41.03195571899414 37.60258483886719 41.69985198974609 C 37.90320587158203 41.75736236572266 38.31230545043945 41.78611755371094 38.82988739013672 41.78611755371094 C 39.47295761108398 41.78611755371094 39.97616195678711 41.6645622253418 40.33951950073242 41.42145919799805 C 40.70156860351562 41.17704010009766 40.88324356079102 40.84113311767578 40.88324356079102 40.41242218017578 C 40.88324356079102 40.00724029541016 40.71725463867188 39.68309783935547 40.38264846801758 39.43476104736328 C 40.04935836791992 39.18773651123047 39.59843063354492 39.06225967407227 39.03117370605469 39.06225967407227 C 38.57109832763672 39.06225967407227 38.07834243774414 39.16289520263672 37.55291748046875 39.36026000976562 Z">
+										</path>
+									</svg>
+								</div>
+								<div id="Group_52">
+									<svg class="Path_21" viewBox="42.029 37.58 7.126 8.948">
+										<path id="Path_21" d="M 49.05434036254883 45.68624877929688 C 49.07917404174805 45.75944519042969 49.09224319458008 45.82610321044922 49.09224319458008 45.88491058349609 C 49.09224319458008 46.09011840820312 49.00728607177734 46.24958801269531 48.83606719970703 46.36067962646484 C 48.66484451293945 46.47308349609375 48.46225357055664 46.52798461914062 48.22829818725586 46.52798461914062 C 48.04531097412109 46.52798461914062 47.88584518432617 46.49007415771484 47.75253295898438 46.41688537597656 C 47.61921310424805 46.34238433837891 47.53164291381836 46.23128509521484 47.48982238769531 46.082275390625 L 47.01405334472656 44.37398529052734 L 44.12028121948242 44.36222839355469 C 44.06276702880859 44.55957794189453 44.00656890869141 44.74779510498047 43.9516716003418 44.92555999755859 C 43.8980827331543 45.10200500488281 43.84972381591797 45.26668548583984 43.80789947509766 45.41438293457031 L 43.61968231201172 46.04568481445312 C 43.57001495361328 46.20122528076172 43.47982788085938 46.31885528564453 43.35043334960938 46.39727783203125 C 43.22104263305664 46.4757080078125 43.06942367553711 46.51491546630859 42.89296722412109 46.51491546630859 C 42.65901565551758 46.51491546630859 42.45772933959961 46.45871734619141 42.2865104675293 46.34238433837891 C 42.11528778076172 46.22736358642578 42.02902221679688 46.07444000244141 42.02902221679688 45.88491058349609 C 42.02902221679688 45.84309387207031 42.03816986083984 45.77251434326172 42.05516052246094 45.67317962646484 L 43.83272933959961 40.40059661865234 L 44.27058792114258 39.07656860351562 C 44.44704055786133 38.54067993164062 44.63787078857422 38.15641784667969 44.84699249267578 37.92637634277344 C 45.05611801147461 37.69503021240234 45.3266716003418 37.58001708984375 45.66127395629883 37.58001708984375 C 45.98672103881836 37.58001708984375 46.24552154541016 37.68326568603516 46.43765640258789 37.88847351074219 C 46.62979125976562 38.09498596191406 46.80885696411133 38.45311737060547 46.97615432739258 38.96546936035156 C 47.33428192138672 40.03854370117188 47.75645446777344 41.38741302490234 48.24136734008789 43.01335906982422 L 48.59164810180664 43.01335906982422 C 48.76679229736328 43.01335906982422 48.90403366088867 43.07086944580078 49.00467300415039 43.18589019775391 C 49.10531997680664 43.30221557617188 49.15497970581055 43.4708251953125 49.15497970581055 43.69432830810547 C 49.15497970581055 44.15570831298828 49.00859451293945 44.3857421875 48.71712493896484 44.3857421875 L 48.65438842773438 44.3857421875 L 49.05434036254883 45.68624877929688 Z M 46.62455749511719 42.988525390625 C 46.37491989135742 42.064453125 46.1579475402832 41.29591369628906 45.97496032714844 40.68553161621094 C 45.9566650390625 40.62932586669922 45.94097900390625 40.57965850830078 45.92398452758789 40.53783416748047 C 45.9069938659668 40.49600982666016 45.89522933959961 40.45549011230469 45.88608551025391 40.41366577148438 C 45.81942749023438 40.18231964111328 45.76583862304688 40.01371765136719 45.7240104675293 39.90523529052734 C 45.68218994140625 39.79936218261719 45.64036178588867 39.74577331542969 45.59853744506836 39.74577331542969 C 45.55671310424805 39.74577331542969 45.51488876342773 39.79936218261719 45.47306060791016 39.90523529052734 C 45.43123626708984 40.01371765136719 45.38941192626953 40.14572143554688 45.34758758544922 40.30255889892578 C 45.30706405639648 40.46725463867188 45.27700424194336 40.57442474365234 45.260009765625 40.62409973144531 L 44.54637908935547 42.97545623779297 L 46.62455749511719 42.988525390625 Z">
+										</path>
+									</svg>
+								</div>
+								<div id="Group_53">
+									<svg class="Path_22" viewBox="48.756 37.513 7.313 8.825">
+										<path id="Path_22" d="M 54.70432662963867 39.02919006347656 C 55.61402130126953 39.71800231933594 56.06887817382812 40.68650817871094 56.06887817382812 41.93211364746094 C 56.06887817382812 42.815673828125 55.84144592285156 43.58812713623047 55.38660430908203 44.25210189819336 C 54.9317512512207 44.91738510131836 54.27953720092773 45.42974472045898 53.43258285522461 45.7931022644043 C 52.58563232421875 46.15645599365234 51.59750747680664 46.33813095092773 50.47084045410156 46.33813095092773 L 49.63172149658203 46.33813095092773 C 49.33110809326172 46.33813095092773 49.11283111572266 46.28716278076172 48.97428131103516 46.18259811401367 C 48.83704376220703 46.079345703125 48.76777267456055 45.90549468994141 48.76777267456055 45.65716934204102 C 48.76777267456055 45.22061920166016 48.96774673461914 45.00104141235352 49.36900329589844 45.00104141235352 L 49.59511947631836 45.00104141235352 L 49.43174743652344 39.07232666015625 L 49.35724258422852 39.07232666015625 C 49.17295074462891 39.07232666015625 49.02656555175781 39.0213508605957 48.91808319091797 38.91809463500977 C 48.80960083007812 38.8148307800293 48.75601196289062 38.65275573730469 48.75601196289062 38.42926025390625 C 48.75601196289062 38.18222808837891 48.81613159179688 38.0031623840332 48.93637847900391 37.8907585144043 C 49.05793380737305 37.7796630859375 49.21478271484375 37.72346115112305 49.40691757202148 37.72346115112305 L 49.55722045898438 37.72346115112305 C 49.67354583740234 37.5836067199707 49.87875747680664 37.51303100585938 50.17022323608398 37.51303100585938 C 50.48783493041992 37.51303100585938 50.70479965209961 37.60321426391602 50.82243347167969 37.78489303588867 C 52.49935913085938 37.92474365234375 53.79332733154297 38.34038162231445 54.70432662963867 39.02919006347656 Z M 52.8692512512207 44.50697708129883 C 53.38291931152344 44.25079727172852 53.78940582275391 43.90181732177734 54.09002304077148 43.46004104614258 C 54.39064407348633 43.01826095581055 54.54094696044922 42.50851821899414 54.54094696044922 41.93211364746094 C 54.54094696044922 40.34014129638672 53.35154342651367 39.41084289550781 50.97274017333984 39.14682388305664 L 51.12305450439453 44.97620010375977 C 51.77395629882812 44.91869735717773 52.3555793762207 44.7618408203125 52.8692512512207 44.50697708129883 Z">
 										</path>
 									</svg>
 								</div>
 							</div>
-							<div id="Group_61">
-								<svg class="Path_27" viewBox="51.04 3.463 3.442 3.084">
-									<path id="Path_27" d="M 51.15234756469727 6.264125347137451 C 51.15234756469727 6.264125347137451 51.39937591552734 5.554405212402344 52.10910797119141 5.801434993743896 C 52.81882476806641 6.049771785736084 55.19631958007812 6.081140041351318 54.27093887329102 4.167639255523682 C 53.34686660766602 2.252832174301147 51.64772033691406 4.844684600830078 51.64772033691406 4.844684600830078 C 51.15234756469727 5.259015083312988 50.87002944946289 7.279692649841309 51.15234756469727 6.264125347137451">
-									</path>
-								</svg>
-								<svg class="Path_28" viewBox="50.55 2.96 4.739 4.416">
-									<path id="Path_28" d="M 50.76312255859375 7.376351356506348 L 50.58536529541016 6.934573173522949 C 50.43375396728516 6.547691345214844 50.78534698486328 5.124329566955566 51.29116821289062 4.5819091796875 C 51.55780029296875 4.188490867614746 52.57598114013672 2.86054253578186 53.6451416015625 2.966412544250488 C 54.04377746582031 2.992552995681763 54.60581207275391 3.1990647315979 55.01100158691406 4.036874771118164 C 55.51420593261719 5.081196784973145 55.23972320556641 5.726873397827148 54.91819000244141 6.085000038146973 C 54.20193481445312 6.888827323913574 52.69230651855469 6.798641204833984 52.04401397705078 6.572525024414062 L 51.91854858398438 6.645718574523926 C 51.83881378173828 6.922809600830078 51.69765472412109 7.327990531921387 51.23235321044922 7.352825164794922 L 50.76312255859375 7.376351356506348 Z M 52.37731170654297 5.307313919067383 C 52.40998840332031 5.317770004272461 52.44267272949219 5.328227043151855 52.47534942626953 5.33998966217041 C 52.85438537597656 5.470693588256836 53.72356414794922 5.460236549377441 53.94314575195312 5.214513778686523 C 54.01634216308594 5.133478164672852 53.97319793701172 4.894290924072266 53.83335113525391 4.605434417724609 C 53.72356414794922 4.379318237304688 53.61769104003906 4.27344799041748 53.5601806640625 4.269527435302734 L 53.54972839355469 4.269527435302734 C 53.28178405761719 4.269527435302734 52.71845245361328 4.811946868896484 52.37731170654297 5.307313919067383 Z">
-									</path>
-								</svg>
+							<div id="Group_57">
+								<div id="Group_55">
+									<svg class="Path_23" viewBox="28.043 37.253 8.268 9.604">
+										<path id="Path_23" d="M 31.84129524230957 46.85712051391602 C 30.19443321228027 46.85712051391602 29.07168769836426 45.99186325073242 28.5109691619873 45.0115852355957 C 27.77902984619141 43.72938537597656 27.91758155822754 42.19100189208984 28.84165191650391 41.35449981689453 C 29.16056632995605 41.06563949584961 29.30956649780273 40.17686462402344 29.32917404174805 39.3900260925293 C 29.29780578613281 39.35342788696289 29.27035903930664 39.3142204284668 29.24552345275879 39.27108764648438 C 29.0324764251709 38.89596176147461 29.03771018981934 38.45026397705078 29.25859451293945 38.07906341552734 C 29.57620429992676 37.54318237304688 30.26762962341309 37.27001190185547 31.1407299041748 37.25302124023438 C 31.98246002197266 37.26870346069336 34.12599945068359 37.64774322509766 35.84082794189453 40.8016242980957 C 35.90356826782227 40.93624877929688 36.75967788696289 42.86281204223633 35.99636459350586 44.56719207763672 C 35.56504440307617 45.53047943115234 34.73638534545898 46.20752334594727 33.53521728515625 46.58133697509766 C 32.91960144042969 46.77346801757812 32.35496520996094 46.85712051391602 31.84129524230957 46.85712051391602 Z M 30.95904922485352 38.89073944091797 C 30.99172401428223 39.70894241333008 30.95251274108887 41.64727783203125 29.93825340270996 42.56481552124023 C 29.5958080291748 42.87589263916016 29.59188842773438 43.60913467407227 29.92910575866699 44.20122528076172 C 30.19182014465332 44.65868377685547 31.01917266845703 45.65073394775391 33.04899978637695 45.02204132080078 C 33.79140090942383 44.79069900512695 34.26715850830078 44.4260368347168 34.50242614746094 43.90583038330078 C 34.96772766113281 42.87850189208984 34.38479232788086 41.54140472412109 34.37825393676758 41.52702713012695 C 33.32348251342773 39.59130859375 32.12361907958984 39.0684928894043 31.50539207458496 38.9351806640625 C 31.28450012207031 38.88812637329102 31.10282325744629 38.87897872924805 30.95904922485352 38.89073944091797 Z">
+										</path>
+									</svg>
+								</div>
+								<div id="Group_56">
+									<svg class="Path_24" viewBox="54.963 37.611 8.268 9.605">
+										<path id="Path_24" d="M 58.76259994506836 47.21640777587891 C 57.11443328857422 47.21640777587891 55.99168395996094 46.35115051269531 55.43096542358398 45.37087249755859 C 54.69903182983398 44.08736419677734 54.83757019042969 42.54898071289062 55.76164627075195 41.71378326416016 C 56.08056259155273 41.42362594604492 56.22956085205078 40.53483581542969 56.24916839599609 39.74931335449219 C 56.21780395507812 39.71140670776367 56.19035720825195 39.67219543457031 56.1655158996582 39.62906265258789 C 55.95247650146484 39.25394058227539 55.95769882202148 38.80824661254883 56.17859268188477 38.43704223632812 C 56.4962043762207 37.90246963500977 57.20461273193359 37.60838317871094 58.06072235107422 37.61100006103516 C 58.9024543762207 37.62799072265625 61.04468154907227 38.00703430175781 62.76082229614258 41.16090774536133 C 62.82356643676758 41.29422760009766 63.67966842651367 43.22079467773438 62.91636276245117 44.92647933959961 C 62.48504257202148 45.88846206665039 61.6563835144043 46.56681442260742 60.45521926879883 46.94062042236328 C 59.83960342407227 47.13144683837891 59.27495956420898 47.21640777587891 58.76259994506836 47.21640777587891 Z M 57.87904357910156 39.24871444702148 C 57.91172027587891 40.06692504882812 57.87251281738281 42.00525283813477 56.85824203491211 42.92409515380859 C 56.51580810546875 43.23517990112305 56.51187896728516 43.96710968017578 56.84910202026367 44.55920028686523 C 57.11181259155273 45.01667022705078 57.94178009033203 46.01131439208984 59.96899795532227 45.3800163269043 C 60.71138763427734 45.14998626708984 61.18715667724609 44.78401184082031 61.42242050170898 44.26381301879883 C 61.88772583007812 43.23778533935547 61.30348205566406 41.89937973022461 61.29825592041016 41.88631057739258 C 60.24216461181641 39.94928741455078 59.04361724853516 39.42778015136719 58.42538833618164 39.29315567016602 C 58.20449447631836 39.24610137939453 58.01889419555664 39.23825454711914 57.87904357910156 39.24871444702148 Z">
+										</path>
+									</svg>
+								</div>
 							</div>
-							<div id="Group_62">
-								<svg class="Path_29" viewBox="46.139 0.502 3.724 3.208">
-									<path id="Path_29" d="M 49.75954818725586 3.506869792938232 C 49.75954818725586 3.506869792938232 48.88775634765625 3.131750106811523 48.1270637512207 3.395771503448486 C 47.36636352539062 3.661099910736084 45.42280197143555 3.310814142227173 46.41484069824219 1.257460713386536 C 47.40688705444336 -0.7945855259895325 49.2288932800293 1.984172821044922 49.2288932800293 1.984172821044922 C 49.75954818725586 2.427257776260376 50.0418701171875 4.484532833099365 49.73863220214844 3.395771503448486">
+						</div>
+						<div id="Group_65">
+							<div id="Group_63">
+								<div id="Group_60">
+									<svg class="Line_22" viewBox="0 0 4.485 8.519">
+										<path id="Line_22" d="M 4.484936237335205 0 L 0 8.51942253112793">
+										</path>
+									</svg>
+									<svg class="Line_23" viewBox="0 0 7.666 16.99">
+										<path id="Line_23" d="M 0 0 L 7.665874481201172 16.99026489257812">
+										</path>
+									</svg>
+									<div id="Group_59">
+										<svg class="Path_25" viewBox="36.064 8.334 34.207 30.276">
+											<path id="Path_25" d="M 47.10073852539062 8.333999633789062 L 36.64445114135742 26.63249778747559 C 36.64445114135742 26.63249778747559 35.33740997314453 29.2465705871582 36.64445114135742 30.55360794067383 C 37.95148468017578 31.86064338684082 39.98523330688477 31.04374694824219 41.58242797851562 29.49098968505859 C 43.17963027954102 27.93953895568848 45.793701171875 28.3839282989502 47.10073852539062 31.4293212890625 C 48.40777587890625 34.47471237182617 52.60597610473633 33.02913284301758 53.63591766357422 29.2465705871582 C 54.4502067565918 26.25607490539551 61.92514419555664 25.90579032897949 61.27424240112305 33.11017227172852 C 60.43381118774414 42.4254150390625 73.89235687255859 38.46640777587891 69.32035064697266 31.86064338684082 L 57.59101104736328 8.333999633789062 C 57.59101104736328 8.333999633789062 52.32888412475586 13.56214332580566 47.10073852539062 8.333999633789062 Z">
+											</path>
+										</svg>
+										<svg class="Path_26" viewBox="60.641 25.796 4.548 6.917">
+											<path id="Path_26" d="M 65.18952941894531 25.79601860046387 C 65.18952941894531 25.79601860046387 63.65900039672852 31.62670516967773 60.64104843139648 32.71284866333008">
+											</path>
+										</svg>
+									</div>
+								</div>
+								<div id="Group_61">
+									<svg class="Path_27" viewBox="51.04 3.463 3.442 3.084">
+										<path id="Path_27" d="M 51.15234756469727 6.264125347137451 C 51.15234756469727 6.264125347137451 51.39937591552734 5.554405212402344 52.10910797119141 5.801434993743896 C 52.81882476806641 6.049771785736084 55.19631958007812 6.081140041351318 54.27093887329102 4.167639255523682 C 53.34686660766602 2.252832174301147 51.64772033691406 4.844684600830078 51.64772033691406 4.844684600830078 C 51.15234756469727 5.259015083312988 50.87002944946289 7.279692649841309 51.15234756469727 6.264125347137451">
+										</path>
+									</svg>
+									<svg class="Path_28" viewBox="50.55 2.96 4.739 4.416">
+										<path id="Path_28" d="M 50.76312255859375 7.376351356506348 L 50.58536529541016 6.934573173522949 C 50.43375396728516 6.547691345214844 50.78534698486328 5.124329566955566 51.29116821289062 4.5819091796875 C 51.55780029296875 4.188490867614746 52.57598114013672 2.86054253578186 53.6451416015625 2.966412544250488 C 54.04377746582031 2.992552995681763 54.60581207275391 3.1990647315979 55.01100158691406 4.036874771118164 C 55.51420593261719 5.081196784973145 55.23972320556641 5.726873397827148 54.91819000244141 6.085000038146973 C 54.20193481445312 6.888827323913574 52.69230651855469 6.798641204833984 52.04401397705078 6.572525024414062 L 51.91854858398438 6.645718574523926 C 51.83881378173828 6.922809600830078 51.69765472412109 7.327990531921387 51.23235321044922 7.352825164794922 L 50.76312255859375 7.376351356506348 Z M 52.37731170654297 5.307313919067383 C 52.40998840332031 5.317770004272461 52.44267272949219 5.328227043151855 52.47534942626953 5.33998966217041 C 52.85438537597656 5.470693588256836 53.72356414794922 5.460236549377441 53.94314575195312 5.214513778686523 C 54.01634216308594 5.133478164672852 53.97319793701172 4.894290924072266 53.83335113525391 4.605434417724609 C 53.72356414794922 4.379318237304688 53.61769104003906 4.27344799041748 53.5601806640625 4.269527435302734 L 53.54972839355469 4.269527435302734 C 53.28178405761719 4.269527435302734 52.71845245361328 4.811946868896484 52.37731170654297 5.307313919067383 Z">
+										</path>
+									</svg>
+								</div>
+								<div id="Group_62">
+									<svg class="Path_29" viewBox="46.139 0.502 3.724 3.208">
+										<path id="Path_29" d="M 49.75954818725586 3.506869792938232 C 49.75954818725586 3.506869792938232 48.88775634765625 3.131750106811523 48.1270637512207 3.395771503448486 C 47.36636352539062 3.661099910736084 45.42280197143555 3.310814142227173 46.41484069824219 1.257460713386536 C 47.40688705444336 -0.7945855259895325 49.2288932800293 1.984172821044922 49.2288932800293 1.984172821044922 C 49.75954818725586 2.427257776260376 50.0418701171875 4.484532833099365 49.73863220214844 3.395771503448486">
+										</path>
+									</svg>
+									<svg class="Path_30" viewBox="45.641 0 5.02 4.536">
+										<path id="Path_30" d="M 50.44956207275391 4.535547256469727 L 49.97380828857422 4.517248153686523 C 49.70586013793945 4.504178047180176 49.54509735107422 4.363017559051514 49.44053268432617 4.190489768981934 C 49.18305206298828 4.119908809661865 48.7974739074707 4.059785842895508 48.49555206298828 4.166962623596191 C 47.88777160644531 4.378702163696289 46.73104476928711 4.346026420593262 46.0696907043457 3.602323770523071 C 45.75730895996094 3.253345251083374 45.33251953125 2.467816352844238 45.9795036315918 1.128104567527771 C 46.40298080444336 0.2497766315937042 46.98854064941406 0.03280865773558617 47.4041748046875 0.005360904149711132 C 48.57135391235352 -0.1018160432577133 49.60783386230469 1.308475613594055 49.88753890991211 1.720191836357117 C 50.38944244384766 2.253462791442871 50.79201126098633 3.661140203475952 50.62078857421875 4.096383094787598 L 50.44956207275391 4.535547256469727 Z M 47.50351333618164 1.30978262424469 L 47.4891242980957 1.30978262424469 C 47.39633560180664 1.316317915916443 47.26954650878906 1.465319871902466 47.15714263916016 1.696665167808533 C 47.01990127563477 1.977678179740906 46.82515335083008 2.487421751022339 47.04473495483398 2.731837511062622 C 47.2617073059082 2.97494649887085 47.81327438354492 3.020693063735962 48.06422424316406 2.934427976608276 C 48.40666961669922 2.814181089401245 48.75172805786133 2.79326868057251 49.06410598754883 2.806338787078857 C 49.02750778198242 2.729223728179932 48.99091339111328 2.670407056808472 48.9582405090332 2.63642406463623 L 48.83537673950195 2.497878313064575 C 48.46156311035156 1.929317831993103 47.81850051879883 1.30978262424469 47.50351333618164 1.30978262424469 Z">
+										</path>
+									</svg>
+								</div>
+							</div>
+							<div id="Group_64">
+								<svg class="Line_24" viewBox="0 0 24.834 51.664">
+									<path id="Line_24" d="M 24.83368682861328 0 L 0 51.66355133056641">
 									</path>
 								</svg>
-								<svg class="Path_30" viewBox="45.641 0 5.02 4.536">
-									<path id="Path_30" d="M 50.44956207275391 4.535547256469727 L 49.97380828857422 4.517248153686523 C 49.70586013793945 4.504178047180176 49.54509735107422 4.363017559051514 49.44053268432617 4.190489768981934 C 49.18305206298828 4.119908809661865 48.7974739074707 4.059785842895508 48.49555206298828 4.166962623596191 C 47.88777160644531 4.378702163696289 46.73104476928711 4.346026420593262 46.0696907043457 3.602323770523071 C 45.75730895996094 3.253345251083374 45.33251953125 2.467816352844238 45.9795036315918 1.128104567527771 C 46.40298080444336 0.2497766315937042 46.98854064941406 0.03280865773558617 47.4041748046875 0.005360904149711132 C 48.57135391235352 -0.1018160432577133 49.60783386230469 1.308475613594055 49.88753890991211 1.720191836357117 C 50.38944244384766 2.253462791442871 50.79201126098633 3.661140203475952 50.62078857421875 4.096383094787598 L 50.44956207275391 4.535547256469727 Z M 47.50351333618164 1.30978262424469 L 47.4891242980957 1.30978262424469 C 47.39633560180664 1.316317915916443 47.26954650878906 1.465319871902466 47.15714263916016 1.696665167808533 C 47.01990127563477 1.977678179740906 46.82515335083008 2.487421751022339 47.04473495483398 2.731837511062622 C 47.2617073059082 2.97494649887085 47.81327438354492 3.020693063735962 48.06422424316406 2.934427976608276 C 48.40666961669922 2.814181089401245 48.75172805786133 2.79326868057251 49.06410598754883 2.806338787078857 C 49.02750778198242 2.729223728179932 48.99091339111328 2.670407056808472 48.9582405090332 2.63642406463623 L 48.83537673950195 2.497878313064575 C 48.46156311035156 1.929317831993103 47.81850051879883 1.30978262424469 47.50351333618164 1.30978262424469 Z">
+								<svg class="Line_25" viewBox="0 0 17.656 36.637">
+									<path id="Line_25" d="M 0 0 L 17.65567588806152 36.63720321655273">
+									</path>
+								</svg>
+								<svg class="Path_31" viewBox="5.121 22.916 30.582 7.58">
+									<path id="Path_31" d="M 35.70338439941406 24.66048622131348 L 18.23179817199707 30.49564361572266 L 20.32376098632812 22.91599655151367 L 5.121322631835938 29.00564384460449">
 									</path>
 								</svg>
 							</div>
 						</div>
-						<div id="Group_64">
-							<svg class="Line_24" viewBox="0 0 24.834 51.664">
-								<path id="Line_24" d="M 24.83368682861328 0 L 0 51.66355133056641">
-								</path>
+					</div>
+			</div>
+		</div>
+		
+		<div id="zoey">
+			<svg class="purplr_bg">
+				<rect id="purplr_bg" rx="0" ry="0" x="0" y="0" width="438" height="416">
+				</rect>
+			</svg>
+			<svg class="Rectangle_37">
+				<rect id="Rectangle_37" rx="0" ry="0" x="0" y="0" width="498" height="407">
+				</rect>
+			</svg>
+			<img id="Artwork_11" src="Imag\Artwork_11.png">
+				
+			<div id="We_Are">
+				<span>We Are</span>
+			</div>
+			<div id="Zoey_hb">
+				<span>Zoey</span>
+			</div>
+			<div id="Component_26__11" class="Component_26___11">
+				<svg class="Rectangle_30_hd">
+					<rect id="Rectangle_30_hd" rx="0" ry="0" x="0" y="0" width="147" height="7">
+					</rect>
+				</svg>
+			</div>
+			<div id="Component_28__10" class="Component_28___10">
+				<div id="Component_25__1" class="Component_25___1">
+					<svg class="Rectangle_33_hz">
+						<rect id="Rectangle_33_hz" rx="0" ry="0" x="0" y="0" width="40" height="40">
+						</rect>
+					</svg>
+				</div>
+				<div id="Component_27__1" class="Component_27___1">
+					<svg class="Rectangle_35_h">
+						<rect id="Rectangle_35_h" rx="0" ry="0" x="0" y="0" width="50.07" height="49.039">
+						</rect>
+					</svg>
+					<div id="Group_187_h">
+						<div id="Component_26__2_h" class="Component_26___2">
+							<svg class="Rectangle_30_h">
+								<rect id="Rectangle_30_h" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
+								</rect>
 							</svg>
-							<svg class="Line_25" viewBox="0 0 17.656 36.637">
-								<path id="Line_25" d="M 0 0 L 17.65567588806152 36.63720321655273">
-								</path>
+						</div>
+						<div id="Component_26__2_ia" class="Component_26___2">
+							<svg class="Rectangle_30_ia">
+								<rect id="Rectangle_30_ia" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
+								</rect>
 							</svg>
-							<svg class="Path_31" viewBox="5.121 22.916 30.582 7.58">
-								<path id="Path_31" d="M 35.70338439941406 24.66048622131348 L 18.23179817199707 30.49564361572266 L 20.32376098632812 22.91599655151367 L 5.121322631835938 29.00564384460449">
-								</path>
+						</div>
+						<div id="Component_26__2_ib" class="Component_26___2">
+							<svg class="Rectangle_30_ib">
+								<rect id="Rectangle_30_ib" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
+								</rect>
+							</svg>
+						</div>
+						<div id="Component_26__2_ic" class="Component_26___2">
+							<svg class="Rectangle_30_ic">
+								<rect id="Rectangle_30_ic" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
+								</rect>
+							</svg>
+						</div>
+						<div id="Component_26__2_id" class="Component_26___2">
+							<svg class="Rectangle_30_id">
+								<rect id="Rectangle_30_id" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
+								</rect>
+							</svg>
+						</div>
+						<div id="Component_26__2_ie" class="Component_26___2">
+							<svg class="Rectangle_30_ie">
+								<rect id="Rectangle_30_ie" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
+								</rect>
 							</svg>
 						</div>
 					</div>
 				</div>
-		</div>
-	</div>
-	<div id="contact" class="contact">
-		<svg class="Path_178" viewBox="0 0 1270.072 35.092">
-			<path id="Path_178" d="M 0 0 L 1270.072265625 0 L 1270.072265625 35.091796875 L 450.6437072753906 35.091796875 L 430.5962524414062 35.091796875 L 0 35.091796875 L 0 0 Z">
-			</path>
-		</svg>
-		<div id="Group_348">
-			<div id="haloradostudio">
-				<span>haloradostudio</span>
 			</div>
-			<svg class="Icon_simple-wechat_g" viewBox="-0.001 3.06 24.634 21.908">
-				<path id="Icon_simple-wechat_g" d="M 24.16230583190918 14.83770179748535 C 23.53722190856934 13.31985759735107 22.35787963867188 12.11438465118408 20.98865127563477 11.37196063995361 C 18.57248687744141 10.0608959197998 15.56819343566895 10.06859588623047 13.15818881988525 11.40495681762695 C 11.48411846160889 12.32556247711182 10.08615207672119 13.97539138793945 9.689959526062012 15.9826831817627 C 9.363560676574707 17.4609317779541 9.656085968017578 19.05246543884277 10.38791656494141 20.33933067321777 C 11.47693347930908 22.2773323059082 13.44558334350586 23.51470184326172 15.49018859863281 23.91176223754883 C 16.97129249572754 24.23402786254883 18.50371932983398 24.04264640808105 19.9427433013916 23.59829521179199 C 20.80698013305664 23.95685577392578 21.57678413391113 24.53759574890137 22.41433334350586 24.96875190734863 C 22.1977596282959 24.19113349914551 21.96681785583496 23.42231369018555 21.72048187255859 22.65679168701172 C 22.66066741943359 21.94186782836914 23.5125904083252 21.04985618591309 24.02373886108398 19.93017196655273 C 24.78738784790039 18.37383651733398 24.83357238769531 16.44243240356445 24.16230583190918 14.83770179748535 Z M 13.97623729705811 4.426179885864258 C 11.41534996032715 2.881938934326172 8.226303100585938 2.649863481521606 5.471424102783203 3.716753005981445 C 3.660841226577759 4.415181636810303 2.022695064544678 5.713046550750732 1.01065719127655 7.47836446762085 C 0.09202245622873306 9.073198318481445 -0.2518241107463837 11.06179237365723 0.190557524561882 12.88650417327881 C 0.6349920034408569 14.9102954864502 1.946740746498108 16.6074161529541 3.538699150085449 17.74030113220215 C 3.230776786804199 18.67520332336426 2.938250780105591 19.6090087890625 2.661120891571045 20.55051231384277 C 3.661867618560791 19.98956871032715 4.662614822387695 19.40332794189453 5.664389133453369 18.83358955383301 C 6.865285396575928 19.24604606628418 8.143162727355957 19.44842720031738 9.421040534973145 19.40333366394043 C 9.08232593536377 18.36614036560059 9.005346298217773 17.2420539855957 9.159306526184082 16.15756607055664 C 9.39024829864502 14.64962291717529 10.16005420684814 13.27036571502686 11.20596408843994 12.24857139587402 C 12.97754383087158 10.47225761413574 15.48710823059082 9.723233222961426 17.87350654602051 9.904715538024902 C 17.42599487304688 7.556457996368408 15.88638401031494 5.572264194488525 13.94852542877197 4.427283763885498 L 13.97623825073242 4.427283763885498 Z M 15.75500106811523 15.41293907165527 C 15.54048252105713 16.13006782531738 14.5684757232666 16.34564208984375 14.0973539352417 15.8001012802124 C 13.57799053192139 15.29525184631348 13.78019523620605 14.24046039581299 14.46172714233398 14.01498603820801 C 15.21510982513428 13.6740198135376 16.08550262451172 14.60562324523926 15.75500106811523 15.41293907165527 Z M 20.67662620544434 15.51412963867188 C 20.41386413574219 16.15866279602051 19.50549507141113 16.30934715270996 19.05900764465332 15.81109809875488 C 18.8444881439209 15.60102081298828 18.7818775177002 15.28425407409668 18.70592308044434 15.00818157196045 C 18.81266975402832 14.50443553924561 19.13701438903809 13.98198890686035 19.66048240661621 13.95779132843018 C 20.38409996032715 13.85000324249268 21.03176307678223 14.80800342559814 20.66123008728027 15.51523113250732 L 20.6766242980957 15.51523113250732 Z M 13.33267974853516 8.41546630859375 C 13.3408899307251 9.472455978393555 12.02400970458984 10.13238906860352 11.28499698638916 9.415262222290039 C 10.51827049255371 8.826824188232422 10.73586845397949 7.394772529602051 11.63602733612061 7.098902702331543 C 12.44175815582275 6.752437591552734 13.39426326751709 7.477263450622559 13.33062744140625 8.402267456054688 L 13.33267974853516 8.41546630859375 Z M 7.113675594329834 8.683838844299316 C 6.9371337890625 9.60224437713623 5.788583755493164 10.04549789428711 5.116287231445312 9.429562568664551 C 4.337243556976318 8.841122627258301 4.555868625640869 7.382673263549805 5.47039794921875 7.085705280303955 C 6.366451263427734 6.716143131256104 7.384647846221924 7.690641403198242 7.113675594329834 8.683838844299316 Z">
+			<svg class="Path_206" viewBox="0 0 450.93 426">
+				<path id="Path_206" d="M 0 0 L 450.9296875 0 L 450.9296875 426 L 0 426 L 0 0 Z">
 				</path>
 			</svg>
-			<div id="Loremipsumdolorsitconsetcom">
-				<span>Loremipsumdolorsit@conset.com</span>
-			</div>
-			<svg class="Icon_material-email_g" viewBox="3 6 23 20">
-				<path id="Icon_material-email_g" d="M 23.70000076293945 5.999998569488525 L 5.300000190734863 5.999998569488525 C 4.034999847412109 5.999998569488525 3.011499881744385 7.124999046325684 3.011499881744385 8.499999046325684 L 2.999999761581421 23.5 C 2.999999761581421 24.875 4.034999847412109 26 5.300000190734863 26 L 23.70000076293945 26 C 24.96500015258789 26 26.00000190734863 24.875 26.00000190734863 23.5 L 26.00000190734863 8.499999046325684 C 26.00000190734863 7.124999046325684 24.96500015258789 5.999998569488525 23.70000076293945 5.999998569488525 Z M 23.70000076293945 10.99999904632568 L 14.5 17.25 L 5.300000190734863 10.99999904632568 L 5.300000190734863 8.499999046325684 L 14.5 14.74999809265137 L 23.70000076293945 8.499999046325684 L 23.70000076293945 10.99999904632568 Z">
-				</path>
-			</svg>
-			<div id="haloradostudio_g">
-				<span>@haloradostudio</span>
-			</div>
-			<svg class="Icon_awesome-instagram_g" viewBox="-0.005 2.238 23 23">
-				<path id="Icon_awesome-instagram_g" d="M 11.49728965759277 7.840787410736084 C 8.233933448791504 7.840787410736084 5.60169792175293 10.47361373901367 5.60169792175293 13.73769950866699 C 5.60169792175293 17.00178527832031 8.233933448791504 19.63460731506348 11.49728965759277 19.63460731506348 C 14.76064777374268 19.63460731506348 17.39288520812988 17.00178527832031 17.39288520812988 13.73769950866699 C 17.39288520812988 10.47361373901367 14.76064777374268 7.840787410736084 11.49728965759277 7.840787410736084 Z M 11.49728965759277 17.57145881652832 C 9.388422966003418 17.57145881652832 7.664386749267578 15.8521671295166 7.664386749267578 13.73769760131836 C 7.664386749267578 11.62322521209717 9.383293151855469 9.903934478759766 11.49729156494141 9.903934478759766 C 13.61128997802734 9.903934478759766 15.3302001953125 11.62322521209717 15.3302001953125 13.73769760131836 C 15.3302001953125 15.8521671295166 13.60615921020508 17.57145881652832 11.49729156494141 17.57145881652832 Z M 19.00917053222656 7.59957218170166 C 19.00917053222656 8.364273071289062 18.3934440612793 8.975006103515625 17.6340446472168 8.975006103515625 C 16.86951637268066 8.975006103515625 16.25892066955566 8.359139442443848 16.25892066955566 7.59957218170166 C 16.25892066955566 6.840005874633789 16.87464714050293 6.22413969039917 17.6340446472168 6.22413969039917 C 18.3934440612793 6.22413969039917 19.00917053222656 6.840005874633789 19.00917053222656 7.59957218170166 Z M 22.91390991210938 8.99553394317627 C 22.82667922973633 7.153071403503418 22.40593338012695 5.521027088165283 21.05646514892578 4.176387786865234 C 19.71212577819824 2.831748962402344 18.08044624328613 2.410907745361328 16.23839378356934 2.318527698516846 C 14.33990097045898 2.210751056671143 8.649548530578613 2.210751056671143 6.75105619430542 2.318527698516846 C 4.914135456085205 2.40577507019043 3.282456636428833 2.826616764068604 1.932986617088318 4.171255588531494 C 0.5835169553756714 5.515894412994385 0.1679003536701202 7.147938251495361 0.07554129511117935 8.990403175354004 C -0.0322110652923584 10.88932132720947 -0.0322110652923584 16.58094215393066 0.07554129511117935 18.4798583984375 C 0.1627693772315979 20.32232666015625 0.5835167169570923 21.95436668395996 1.932986617088318 23.29900360107422 C 3.282456636428833 24.64364433288574 4.909003734588623 25.06448364257812 6.75105619430542 25.1568660736084 C 8.649548530578613 25.2646369934082 14.33990097045898 25.2646369934082 16.23839378356934 25.1568660736084 C 18.0804500579834 25.06961822509766 19.71212577819824 24.64877319335938 21.05646705627441 23.29900360107422 C 22.40080642700195 21.9543628692627 22.82155609130859 20.32232093811035 22.91391181945801 18.4798583984375 C 23.02166366577148 16.58094024658203 23.02166366577148 10.89445114135742 22.91391181945801 8.995532989501953 Z M 20.46126174926758 20.51734733581543 C 20.06103897094727 21.52326202392578 19.28624725341797 22.29822540283203 18.27542877197266 22.70366859436035 C 16.76176452636719 23.30413627624512 13.17001724243164 23.16556930541992 11.49728965759277 23.16556930541992 C 9.824564933776855 23.16556930541992 6.227688312530518 23.29900360107422 4.719154357910156 22.70366859436035 C 3.713465452194214 22.30335426330566 2.938675165176392 21.52838897705078 2.533320903778076 20.51734733581543 C 1.932986378669739 19.00334548950195 2.07152533531189 15.41079998016357 2.07152533531189 13.73769950866699 C 2.07152533531189 12.06459903717041 1.938117861747742 8.466917037963867 2.533320903778076 6.958047389984131 C 2.933543920516968 5.952133655548096 3.708334684371948 5.177169322967529 4.719154357910156 4.771724700927734 C 6.232818603515625 4.171256065368652 9.824564933776855 4.309825420379639 11.49728965759277 4.309825420379639 C 13.17001724243164 4.309825420379639 16.76689720153809 4.176387786865234 18.27542877197266 4.771724700927734 C 19.2811164855957 5.172036647796631 20.055908203125 5.947000980377197 20.46126174926758 6.958047389984131 C 21.06159973144531 8.472050666809082 20.92305946350098 12.06459712982178 20.92305946350098 13.73769950866699 C 20.92305946350098 15.41079998016357 21.06159973144531 19.00847816467285 20.46126174926758 20.51734733581543 Z">
-				</path>
-			</svg>
-		</div>
-	</div>
-	<div id="zoey">
-		<svg class="purplr_bg">
-			<rect id="purplr_bg" rx="0" ry="0" x="0" y="0" width="438" height="416">
-			</rect>
-		</svg>
-		<svg class="Rectangle_37">
-			<rect id="Rectangle_37" rx="0" ry="0" x="0" y="0" width="498" height="407">
-			</rect>
-		</svg>
-		<img id="Artwork_11" src="Imag\Artwork_11.png">
-			
-		<div id="We_Are">
-			<span>We Are</span>
-		</div>
-		<div id="Zoey_hb">
-			<span>Zoey</span>
-		</div>
-		<div id="Component_26__11" class="Component_26___11">
-			<svg class="Rectangle_30_hd">
-				<rect id="Rectangle_30_hd" rx="0" ry="0" x="0" y="0" width="147" height="7">
-				</rect>
-			</svg>
-		</div>
-		<div id="Component_28__10" class="Component_28___10">
-			<div id="Component_25__1" class="Component_25___1">
-				<svg class="Rectangle_33_hz">
-					<rect id="Rectangle_33_hz" rx="0" ry="0" x="0" y="0" width="40" height="40">
-					</rect>
-				</svg>
-			</div>
-			<div id="Component_27__1" class="Component_27___1">
-				<svg class="Rectangle_35_h">
-					<rect id="Rectangle_35_h" rx="0" ry="0" x="0" y="0" width="50.07" height="49.039">
-					</rect>
-				</svg>
-				<div id="Group_187_h">
-					<div id="Component_26__2_h" class="Component_26___2">
-						<svg class="Rectangle_30_h">
-							<rect id="Rectangle_30_h" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
-							</rect>
-						</svg>
-					</div>
-					<div id="Component_26__2_ia" class="Component_26___2">
-						<svg class="Rectangle_30_ia">
-							<rect id="Rectangle_30_ia" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
-							</rect>
-						</svg>
-					</div>
-					<div id="Component_26__2_ib" class="Component_26___2">
-						<svg class="Rectangle_30_ib">
-							<rect id="Rectangle_30_ib" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
-							</rect>
-						</svg>
-					</div>
-					<div id="Component_26__2_ic" class="Component_26___2">
-						<svg class="Rectangle_30_ic">
-							<rect id="Rectangle_30_ic" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
-							</rect>
-						</svg>
-					</div>
-					<div id="Component_26__2_id" class="Component_26___2">
-						<svg class="Rectangle_30_id">
-							<rect id="Rectangle_30_id" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
-							</rect>
-						</svg>
-					</div>
-					<div id="Component_26__2_ie" class="Component_26___2">
-						<svg class="Rectangle_30_ie">
-							<rect id="Rectangle_30_ie" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
-							</rect>
-						</svg>
+			<div id="Component_28__11" class="Component_28___11">
+				<div id="Component_25__1_hy" class="Component_25___1">
+					<svg class="Rectangle_33_hz">
+						<rect id="Rectangle_33_hz" rx="0" ry="0" x="0" y="0" width="40" height="40">
+						</rect>
+					</svg>
+				</div>
+				<div id="Component_27__1_h" class="Component_27___1">
+					<svg class="Rectangle_35_h">
+						<rect id="Rectangle_35_h" rx="0" ry="0" x="0" y="0" width="50.07" height="49.039">
+						</rect>
+					</svg>
+					<div id="Group_187_h">
+						<div id="Component_26__2_h" class="Component_26___2">
+							<svg class="Rectangle_30_h">
+								<rect id="Rectangle_30_h" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
+								</rect>
+							</svg>
+						</div>
+						<div id="Component_26__2_ia" class="Component_26___2">
+							<svg class="Rectangle_30_ia">
+								<rect id="Rectangle_30_ia" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
+								</rect>
+							</svg>
+						</div>
+						<div id="Component_26__2_ib" class="Component_26___2">
+							<svg class="Rectangle_30_ib">
+								<rect id="Rectangle_30_ib" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
+								</rect>
+							</svg>
+						</div>
+						<div id="Component_26__2_ic" class="Component_26___2">
+							<svg class="Rectangle_30_ic">
+								<rect id="Rectangle_30_ic" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
+								</rect>
+							</svg>
+						</div>
+						<div id="Component_26__2_id" class="Component_26___2">
+							<svg class="Rectangle_30_id">
+								<rect id="Rectangle_30_id" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
+								</rect>
+							</svg>
+						</div>
+						<div id="Component_26__2_ie" class="Component_26___2">
+							<svg class="Rectangle_30_ie">
+								<rect id="Rectangle_30_ie" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
+								</rect>
+							</svg>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<svg class="Path_206" viewBox="0 0 450.93 426">
-			<path id="Path_206" d="M 0 0 L 450.9296875 0 L 450.9296875 426 L 0 426 L 0 0 Z">
-			</path>
-		</svg>
-		<div id="Component_28__11" class="Component_28___11">
-			<div id="Component_25__1_hy" class="Component_25___1">
-				<svg class="Rectangle_33_hz">
-					<rect id="Rectangle_33_hz" rx="0" ry="0" x="0" y="0" width="40" height="40">
+			<div id="Component_26__13" class="Component_26___13">
+				<svg class="Rectangle_30_ig">
+					<rect id="Rectangle_30_ig" rx="0" ry="0" x="0" y="0" width="147" height="7">
 					</rect>
 				</svg>
 			</div>
-			<div id="Component_27__1_h" class="Component_27___1">
-				<svg class="Rectangle_35_h">
-					<rect id="Rectangle_35_h" rx="0" ry="0" x="0" y="0" width="50.07" height="49.039">
-					</rect>
-				</svg>
-				<div id="Group_187_h">
-					<div id="Component_26__2_h" class="Component_26___2">
-						<svg class="Rectangle_30_h">
-							<rect id="Rectangle_30_h" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
-							</rect>
-						</svg>
-					</div>
-					<div id="Component_26__2_ia" class="Component_26___2">
-						<svg class="Rectangle_30_ia">
-							<rect id="Rectangle_30_ia" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
-							</rect>
-						</svg>
-					</div>
-					<div id="Component_26__2_ib" class="Component_26___2">
-						<svg class="Rectangle_30_ib">
-							<rect id="Rectangle_30_ib" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
-							</rect>
-						</svg>
-					</div>
-					<div id="Component_26__2_ic" class="Component_26___2">
-						<svg class="Rectangle_30_ic">
-							<rect id="Rectangle_30_ic" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
-							</rect>
-						</svg>
-					</div>
-					<div id="Component_26__2_id" class="Component_26___2">
-						<svg class="Rectangle_30_id">
-							<rect id="Rectangle_30_id" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
-							</rect>
-						</svg>
-					</div>
-					<div id="Component_26__2_ie" class="Component_26___2">
-						<svg class="Rectangle_30_ie">
-							<rect id="Rectangle_30_ie" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
-							</rect>
-						</svg>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="Component_26__13" class="Component_26___13">
-			<svg class="Rectangle_30_ig">
-				<rect id="Rectangle_30_ig" rx="0" ry="0" x="0" y="0" width="147" height="7">
-				</rect>
-			</svg>
-		</div>
-		<img id="Zoey_home" src="Imag\Zoey_home@2x.png">
-			
-	</div>
-	<div id="Component_24__16" class="Component_24___16">
-		<svg class="Polygon_2" viewBox="0 0 67.975 36.091">
-			<path id="Polygon_2" d="M 26.70757102966309 7.730693817138672 C 30.65559005737305 3.538296937942505 37.31968307495117 3.538296937942505 41.2677001953125 7.730693817138672 L 52.10210418701172 19.23573303222656 C 58.11117172241211 25.61675834655762 53.58710479736328 36.09143829345703 44.82203674316406 36.09143829345703 L 23.15323638916016 36.09143829345703 C 14.38816928863525 36.09143829345703 9.864101409912109 25.61675834655762 15.87317085266113 19.23573303222656 Z">
-			</path>
-		</svg>
-		<svg class="Polygon_3" viewBox="0 0 57.522 31.37">
-			<path id="Polygon_3" d="M 21.38997268676758 8.039447784423828 C 25.35323905944824 3.716709136962891 32.16850662231445 3.716708898544312 36.13177108764648 8.039446830749512 L 42.15736389160156 14.61156463623047 C 48.03778839111328 21.02535247802734 43.48796463012695 31.36950874328613 34.78646469116211 31.36951065063477 L 22.73527908325195 31.36951065063477 C 14.03377819061279 31.36951065063477 9.483953475952148 21.02535247802734 15.36438083648682 14.6115665435791 Z">
-			</path>
-		</svg>
-	</div>
-	<div id="Juno_il">
-		<svg class="Rectangle_36">
-			<rect id="Rectangle_36" rx="0" ry="0" x="0" y="0" width="498" height="487">
-			</rect>
-		</svg>
-		<svg class="Rectangle_4">
-			<rect id="Rectangle_4" rx="0" ry="0" x="0" y="0" width="498" height="487">
-			</rect>
-		</svg>
-		<img id="Juno_bg" src="Imag\Juno_bg.png">
-			
-		<div id="Juno_ip">
-			<span>Juno</span>
-		</div>
-		<div id="Component_23__14" class="Component_23___14">
-			<div id="Group_186_ir">
-				<svg class="Rectangle_31_jb">
-					<rect id="Rectangle_31_jb" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-					</rect>
-				</svg>
-				<svg class="Rectangle_32_jc">
-					<rect id="Rectangle_32_jc" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-					</rect>
-				</svg>
-			</div>
-			<div id="Group_186_iu">
-				<svg class="Rectangle_31_je">
-					<rect id="Rectangle_31_je" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-					</rect>
-				</svg>
-				<svg class="Rectangle_32_jf">
-					<rect id="Rectangle_32_jf" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-					</rect>
-				</svg>
-			</div>
-			<div id="Group_186_ix">
-				<svg class="Rectangle_31_jh">
-					<rect id="Rectangle_31_jh" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-					</rect>
-				</svg>
-				<svg class="Rectangle_32_ji">
-					<rect id="Rectangle_32_ji" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-					</rect>
-				</svg>
-			</div>
-			<div id="Group_186_i">
-				<svg class="Rectangle_31_jk">
-					<rect id="Rectangle_31_jk" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-					</rect>
-				</svg>
-				<svg class="Rectangle_32_jl">
-					<rect id="Rectangle_32_jl" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-					</rect>
-				</svg>
-			</div>
-			<div id="Group_186_ja">
-				<svg class="Rectangle_31_jn">
-					<rect id="Rectangle_31_jn" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-					</rect>
-				</svg>
-				<svg class="Rectangle_32_jo">
-					<rect id="Rectangle_32_jo" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-					</rect>
-				</svg>
-			</div>
-		</div>
-		<div id="Group_652">
-			<svg class="Rectangle_52">
-				<rect id="Rectangle_52" rx="0" ry="0" x="0" y="0" width="488" height="443">
-				</rect>
-			</svg>
-			<img id="Juno_home" src="Imag\Juno_home.png">
+			<img id="Zoey_home" src="Imag\Zoey_home@2x.png">
 				
 		</div>
-		<div id="Component_23__18" class="Component_23___18">
-			<div id="Group_186_jb">
-				<svg class="Rectangle_31_jb">
-					<rect id="Rectangle_31_jb" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-					</rect>
-				</svg>
-				<svg class="Rectangle_32_jc">
-					<rect id="Rectangle_32_jc" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-					</rect>
-				</svg>
-			</div>
-			<div id="Group_186_jd">
-				<svg class="Rectangle_31_je">
-					<rect id="Rectangle_31_je" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-					</rect>
-				</svg>
-				<svg class="Rectangle_32_jf">
-					<rect id="Rectangle_32_jf" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-					</rect>
-				</svg>
-			</div>
-			<div id="Group_186_jg">
-				<svg class="Rectangle_31_jh">
-					<rect id="Rectangle_31_jh" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-					</rect>
-				</svg>
-				<svg class="Rectangle_32_ji">
-					<rect id="Rectangle_32_ji" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-					</rect>
-				</svg>
-			</div>
-			<div id="Group_186_jj">
-				<svg class="Rectangle_31_jk">
-					<rect id="Rectangle_31_jk" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-					</rect>
-				</svg>
-				<svg class="Rectangle_32_jl">
-					<rect id="Rectangle_32_jl" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-					</rect>
-				</svg>
-			</div>
-			<div id="Group_186_jm">
-				<svg class="Rectangle_31_jn">
-					<rect id="Rectangle_31_jn" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-					</rect>
-				</svg>
-				<svg class="Rectangle_32_jo">
-					<rect id="Rectangle_32_jo" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
-					</rect>
-				</svg>
-			</div>
-		</div>
-		<div id="Component_24__17" class="Component_24___17">
-			<svg class="Polygon_2_jq" viewBox="0 0 86.428 68.651">
-				<path id="Polygon_2_jq" d="M 34.75096893310547 13.44444465637207 C 38.67285537719727 7.214027404785156 47.75493621826172 7.214027404785156 51.67681884765625 13.44444465637207 L 76.77973175048828 53.32365036010742 C 80.97157287597656 59.98293685913086 76.18557739257812 68.65083312988281 68.31680297851562 68.65083312988281 L 18.11098480224609 68.65083312988281 C 10.24220657348633 68.65083312988281 5.456214904785156 59.98293685913086 9.64806079864502 53.32365036010742 Z">
+		<div id="Component_24__16" class="Component_24___16">
+			<svg class="Polygon_2" viewBox="0 0 67.975 36.091">
+				<path id="Polygon_2" d="M 26.70757102966309 7.730693817138672 C 30.65559005737305 3.538296937942505 37.31968307495117 3.538296937942505 41.2677001953125 7.730693817138672 L 52.10210418701172 19.23573303222656 C 58.11117172241211 25.61675834655762 53.58710479736328 36.09143829345703 44.82203674316406 36.09143829345703 L 23.15323638916016 36.09143829345703 C 14.38816928863525 36.09143829345703 9.864101409912109 25.61675834655762 15.87317085266113 19.23573303222656 Z">
 				</path>
 			</svg>
-			<svg class="Polygon_3_jr" viewBox="0 0 75.39 49.734">
-				<path id="Polygon_3_jr" d="M 29.72520637512207 10.51506423950195 C 33.72670364379883 5.235500812530518 41.66290283203125 5.235500812530518 45.66439437866211 10.51506233215332 L 63.23229217529297 33.6941032409668 C 68.22386169433594 40.27996444702148 63.52643966674805 49.73443222045898 55.26269912719727 49.73442840576172 L 20.12690734863281 49.73443222045898 C 11.86316871643066 49.73443222045898 7.165743350982666 40.27996444702148 12.15731143951416 33.69410705566406 Z">
+			<svg class="Polygon_3" viewBox="0 0 57.522 31.37">
+				<path id="Polygon_3" d="M 21.38997268676758 8.039447784423828 C 25.35323905944824 3.716709136962891 32.16850662231445 3.716708898544312 36.13177108764648 8.039446830749512 L 42.15736389160156 14.61156463623047 C 48.03778839111328 21.02535247802734 43.48796463012695 31.36950874328613 34.78646469116211 31.36951065063477 L 22.73527908325195 31.36951065063477 C 14.03377819061279 31.36951065063477 9.483953475952148 21.02535247802734 15.36438083648682 14.6115665435791 Z">
 				</path>
 			</svg>
 		</div>
-	</div>
-	<div id="Component_28__12" class="Component_28___12">
-		<div id="Component_25__1_jt" class="Component_25___1">
-			<svg class="Rectangle_33_ju">
-				<rect id="Rectangle_33_ju" rx="0" ry="0" x="0" y="0" width="40" height="40">
+		<div id="Juno_il">
+			<svg class="Rectangle_36">
+				<rect id="Rectangle_36" rx="0" ry="0" x="0" y="0" width="498" height="487">
 				</rect>
 			</svg>
-		</div>
-		<div id="Component_27__1_jv" class="Component_27___1">
-			<svg class="Rectangle_35_jw">
-				<rect id="Rectangle_35_jw" rx="0" ry="0" x="0" y="0" width="50.07" height="49.039">
+			<svg class="Rectangle_4">
+				<rect id="Rectangle_4" rx="0" ry="0" x="0" y="0" width="498" height="487">
 				</rect>
 			</svg>
-			<div id="Group_187_jx">
-				<div id="Component_26__2_jy" class="Component_26___2">
-					<svg class="Rectangle_30_jz">
-						<rect id="Rectangle_30_jz" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
+			<img id="Juno_bg" src="Imag\Juno_bg.png">
+				
+			<div id="Juno_ip">
+				<span>Juno</span>
+			</div>
+			<div id="Component_23__14" class="Component_23___14">
+				<div id="Group_186_ir">
+					<svg class="Rectangle_31_jb">
+						<rect id="Rectangle_31_jb" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+						</rect>
+					</svg>
+					<svg class="Rectangle_32_jc">
+						<rect id="Rectangle_32_jc" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
 						</rect>
 					</svg>
 				</div>
-				<div id="Component_26__2_j" class="Component_26___2">
-					<svg class="Rectangle_30_j">
-						<rect id="Rectangle_30_j" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
+				<div id="Group_186_iu">
+					<svg class="Rectangle_31_je">
+						<rect id="Rectangle_31_je" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+						</rect>
+					</svg>
+					<svg class="Rectangle_32_jf">
+						<rect id="Rectangle_32_jf" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
 						</rect>
 					</svg>
 				</div>
-				<div id="Component_26__2_ka" class="Component_26___2">
-					<svg class="Rectangle_30_ka">
-						<rect id="Rectangle_30_ka" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
+				<div id="Group_186_ix">
+					<svg class="Rectangle_31_jh">
+						<rect id="Rectangle_31_jh" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+						</rect>
+					</svg>
+					<svg class="Rectangle_32_ji">
+						<rect id="Rectangle_32_ji" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
 						</rect>
 					</svg>
 				</div>
-				<div id="Component_26__2_kb" class="Component_26___2">
-					<svg class="Rectangle_30_kb">
-						<rect id="Rectangle_30_kb" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
+				<div id="Group_186_i">
+					<svg class="Rectangle_31_jk">
+						<rect id="Rectangle_31_jk" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+						</rect>
+					</svg>
+					<svg class="Rectangle_32_jl">
+						<rect id="Rectangle_32_jl" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
 						</rect>
 					</svg>
 				</div>
-				<div id="Component_26__2_kc" class="Component_26___2">
-					<svg class="Rectangle_30_kc">
-						<rect id="Rectangle_30_kc" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
+				<div id="Group_186_ja">
+					<svg class="Rectangle_31_jn">
+						<rect id="Rectangle_31_jn" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
 						</rect>
 					</svg>
-				</div>
-				<div id="Component_26__2_kd" class="Component_26___2">
-					<svg class="Rectangle_30_kd">
-						<rect id="Rectangle_30_kd" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
+					<svg class="Rectangle_32_jo">
+						<rect id="Rectangle_32_jo" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
 						</rect>
 					</svg>
 				</div>
 			</div>
+			<div id="Group_652">
+				<svg class="Rectangle_52">
+					<rect id="Rectangle_52" rx="0" ry="0" x="0" y="0" width="488" height="443">
+					</rect>
+				</svg>
+				<img id="Juno_home" src="Imag\Juno_home.png">
+					
+			</div>
+			<div id="Component_23__18" class="Component_23___18">
+				<div id="Group_186_jb">
+					<svg class="Rectangle_31_jb">
+						<rect id="Rectangle_31_jb" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+						</rect>
+					</svg>
+					<svg class="Rectangle_32_jc">
+						<rect id="Rectangle_32_jc" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+						</rect>
+					</svg>
+				</div>
+				<div id="Group_186_jd">
+					<svg class="Rectangle_31_je">
+						<rect id="Rectangle_31_je" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+						</rect>
+					</svg>
+					<svg class="Rectangle_32_jf">
+						<rect id="Rectangle_32_jf" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+						</rect>
+					</svg>
+				</div>
+				<div id="Group_186_jg">
+					<svg class="Rectangle_31_jh">
+						<rect id="Rectangle_31_jh" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+						</rect>
+					</svg>
+					<svg class="Rectangle_32_ji">
+						<rect id="Rectangle_32_ji" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+						</rect>
+					</svg>
+				</div>
+				<div id="Group_186_jj">
+					<svg class="Rectangle_31_jk">
+						<rect id="Rectangle_31_jk" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+						</rect>
+					</svg>
+					<svg class="Rectangle_32_jl">
+						<rect id="Rectangle_32_jl" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+						</rect>
+					</svg>
+				</div>
+				<div id="Group_186_jm">
+					<svg class="Rectangle_31_jn">
+						<rect id="Rectangle_31_jn" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+						</rect>
+					</svg>
+					<svg class="Rectangle_32_jo">
+						<rect id="Rectangle_32_jo" rx="0" ry="0" x="0" y="0" width="32.442" height="4.399">
+						</rect>
+					</svg>
+				</div>
+			</div>
+			<div id="Component_24__17" class="Component_24___17">
+				<svg class="Polygon_2_jq" viewBox="0 0 86.428 68.651">
+					<path id="Polygon_2_jq" d="M 34.75096893310547 13.44444465637207 C 38.67285537719727 7.214027404785156 47.75493621826172 7.214027404785156 51.67681884765625 13.44444465637207 L 76.77973175048828 53.32365036010742 C 80.97157287597656 59.98293685913086 76.18557739257812 68.65083312988281 68.31680297851562 68.65083312988281 L 18.11098480224609 68.65083312988281 C 10.24220657348633 68.65083312988281 5.456214904785156 59.98293685913086 9.64806079864502 53.32365036010742 Z">
+					</path>
+				</svg>
+				<svg class="Polygon_3_jr" viewBox="0 0 75.39 49.734">
+					<path id="Polygon_3_jr" d="M 29.72520637512207 10.51506423950195 C 33.72670364379883 5.235500812530518 41.66290283203125 5.235500812530518 45.66439437866211 10.51506233215332 L 63.23229217529297 33.6941032409668 C 68.22386169433594 40.27996444702148 63.52643966674805 49.73443222045898 55.26269912719727 49.73442840576172 L 20.12690734863281 49.73443222045898 C 11.86316871643066 49.73443222045898 7.165743350982666 40.27996444702148 12.15731143951416 33.69410705566406 Z">
+					</path>
+				</svg>
+			</div>
+		</div>
+		<div id="Component_28__12" class="Component_28___12">
+			<div id="Component_25__1_jt" class="Component_25___1">
+				<svg class="Rectangle_33_ju">
+					<rect id="Rectangle_33_ju" rx="0" ry="0" x="0" y="0" width="40" height="40">
+					</rect>
+				</svg>
+			</div>
+			<div id="Component_27__1_jv" class="Component_27___1">
+				<svg class="Rectangle_35_jw">
+					<rect id="Rectangle_35_jw" rx="0" ry="0" x="0" y="0" width="50.07" height="49.039">
+					</rect>
+				</svg>
+				<div id="Group_187_jx">
+					<div id="Component_26__2_jy" class="Component_26___2">
+						<svg class="Rectangle_30_jz">
+							<rect id="Rectangle_30_jz" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
+							</rect>
+						</svg>
+					</div>
+					<div id="Component_26__2_j" class="Component_26___2">
+						<svg class="Rectangle_30_j">
+							<rect id="Rectangle_30_j" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
+							</rect>
+						</svg>
+					</div>
+					<div id="Component_26__2_ka" class="Component_26___2">
+						<svg class="Rectangle_30_ka">
+							<rect id="Rectangle_30_ka" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
+							</rect>
+						</svg>
+					</div>
+					<div id="Component_26__2_kb" class="Component_26___2">
+						<svg class="Rectangle_30_kb">
+							<rect id="Rectangle_30_kb" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
+							</rect>
+						</svg>
+					</div>
+					<div id="Component_26__2_kc" class="Component_26___2">
+						<svg class="Rectangle_30_kc">
+							<rect id="Rectangle_30_kc" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
+							</rect>
+						</svg>
+					</div>
+					<div id="Component_26__2_kd" class="Component_26___2">
+						<svg class="Rectangle_30_kd">
+							<rect id="Rectangle_30_kd" rx="0" ry="0" x="0" y="0" width="49.633" height="7">
+							</rect>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="Component_24__18" class="Component_24___18">
+			<svg class="Polygon_2_kb" viewBox="0 0 86.428 68.651">
+				<path id="Polygon_2_kb" d="M 34.75096893310547 13.44444465637207 C 38.67285537719727 7.214027404785156 47.75493621826172 7.214027404785156 51.67681884765625 13.44444465637207 L 76.77973175048828 53.32365036010742 C 80.97157287597656 59.98293685913086 76.18557739257812 68.65083312988281 68.31680297851562 68.65083312988281 L 18.11098480224609 68.65083312988281 C 10.24220657348633 68.65083312988281 5.456214904785156 59.98293685913086 9.64806079864502 53.32365036010742 Z">
+				</path>
+			</svg>
+			<svg class="Polygon_3_kc" viewBox="0 0 75.39 49.734">
+				<path id="Polygon_3_kc" d="M 29.72520637512207 10.51506423950195 C 33.72670364379883 5.235500812530518 41.66290283203125 5.235500812530518 45.66439437866211 10.51506233215332 L 63.23229217529297 33.6941032409668 C 68.22386169433594 40.27996444702148 63.52643966674805 49.73443222045898 55.26269912719727 49.73442840576172 L 20.12690734863281 49.73443222045898 C 11.86316871643066 49.73443222045898 7.165743350982666 40.27996444702148 12.15731143951416 33.69410705566406 Z">
+				</path>
+			</svg>
+		</div>
+		<div id="Gp3" class="Gp3">
+			<img id="IMG_4420" src="Imag\IMG_4420.png">
+				
+		</div>
+		<div id="Gp2" class="Gp2">
+			<img id="teaspace3" src="Imag\teaspace3.png">
+				
+		</div>
+		<div id="Gp1" class="Gp1">
+			<img id="IMG_99072x" src="Imag\IMG_99072x.png">
+				
+		</div>
+		<div id="G_wave" class="G_wave">
+			<div id="Group_186_kl">
+				<svg class="Rectangle_31_km">
+					<rect id="Rectangle_31_km" rx="0" ry="0" x="0" y="0" width="28.361" height="4.226">
+					</rect>
+				</svg>
+				<svg class="Rectangle_32_kn">
+					<rect id="Rectangle_32_kn" rx="0" ry="0" x="0" y="0" width="28.361" height="4.226">
+					</rect>
+				</svg>
+			</div>
+			<div id="Group_186_ko">
+				<svg class="Rectangle_31_kp">
+					<rect id="Rectangle_31_kp" rx="0" ry="0" x="0" y="0" width="28.361" height="4.226">
+					</rect>
+				</svg>
+				<svg class="Rectangle_32_kq">
+					<rect id="Rectangle_32_kq" rx="0" ry="0" x="0" y="0" width="28.361" height="4.226">
+					</rect>
+				</svg>
+			</div>
+			<div id="Group_186_kr">
+				<svg class="Rectangle_31_ks">
+					<rect id="Rectangle_31_ks" rx="0" ry="0" x="0" y="0" width="28.361" height="4.226">
+					</rect>
+				</svg>
+				<svg class="Rectangle_32_kt">
+					<rect id="Rectangle_32_kt" rx="0" ry="0" x="0" y="0" width="28.361" height="4.226">
+					</rect>
+				</svg>
+			</div>
+			<div id="Group_186_ku">
+				<svg class="Rectangle_31_kv">
+					<rect id="Rectangle_31_kv" rx="0" ry="0" x="0" y="0" width="28.361" height="4.226">
+					</rect>
+				</svg>
+				<svg class="Rectangle_32_kw">
+					<rect id="Rectangle_32_kw" rx="0" ry="0" x="0" y="0" width="28.361" height="4.226">
+					</rect>
+				</svg>
+			</div>
+			<div id="Group_186_kx">
+				<svg class="Rectangle_31_ky">
+					<rect id="Rectangle_31_ky" rx="0" ry="0" x="0" y="0" width="28.361" height="4.226">
+					</rect>
+				</svg>
+				<svg class="Rectangle_32_kz">
+					<rect id="Rectangle_32_kz" rx="0" ry="0" x="0" y="0" width="28.361" height="4.226">
+					</rect>
+				</svg>
+			</div>
+		</div>
+		<div id="G-Tri" class="G_Tri">
+			<svg class="Polygon_2_k" viewBox="0 0 86.428 68.651">
+				<path id="Polygon_2_k" d="M 34.75096893310547 13.44444465637207 C 38.67285537719727 7.214027404785156 47.75493621826172 7.214027404785156 51.67681884765625 13.44444465637207 L 76.77973175048828 53.32365036010742 C 80.97157287597656 59.98293685913086 76.18557739257812 68.65083312988281 68.31680297851562 68.65083312988281 L 18.11098480224609 68.65083312988281 C 10.24220657348633 68.65083312988281 5.456214904785156 59.98293685913086 9.64806079864502 53.32365036010742 Z">
+				</path>
+			</svg>
+			<svg class="Polygon_3_k" viewBox="0 0 75.39 49.734">
+				<path id="Polygon_3_k" d="M 29.72520637512207 10.51506423950195 C 33.72670364379883 5.235500812530518 41.66290283203125 5.235500812530518 45.66439437866211 10.51506233215332 L 63.23229217529297 33.6941032409668 C 68.22386169433594 40.27996444702148 63.52643966674805 49.73443222045898 55.26269912719727 49.73442840576172 L 20.12690734863281 49.73443222045898 C 11.86316871643066 49.73443222045898 7.165743350982666 40.27996444702148 12.15731143951416 33.69410705566406 Z">
+				</path>
+			</svg>
 		</div>
 	</div>
-	<div id="Component_24__18" class="Component_24___18">
-		<svg class="Polygon_2_kb" viewBox="0 0 86.428 68.651">
-			<path id="Polygon_2_kb" d="M 34.75096893310547 13.44444465637207 C 38.67285537719727 7.214027404785156 47.75493621826172 7.214027404785156 51.67681884765625 13.44444465637207 L 76.77973175048828 53.32365036010742 C 80.97157287597656 59.98293685913086 76.18557739257812 68.65083312988281 68.31680297851562 68.65083312988281 L 18.11098480224609 68.65083312988281 C 10.24220657348633 68.65083312988281 5.456214904785156 59.98293685913086 9.64806079864502 53.32365036010742 Z">
-			</path>
-		</svg>
-		<svg class="Polygon_3_kc" viewBox="0 0 75.39 49.734">
-			<path id="Polygon_3_kc" d="M 29.72520637512207 10.51506423950195 C 33.72670364379883 5.235500812530518 41.66290283203125 5.235500812530518 45.66439437866211 10.51506233215332 L 63.23229217529297 33.6941032409668 C 68.22386169433594 40.27996444702148 63.52643966674805 49.73443222045898 55.26269912719727 49.73442840576172 L 20.12690734863281 49.73443222045898 C 11.86316871643066 49.73443222045898 7.165743350982666 40.27996444702148 12.15731143951416 33.69410705566406 Z">
-			</path>
-		</svg>
-	</div>
-	<img id="Logo" src="Imag\Logo.png">
-		
-	<div id="Gp3" class="Gp3">
-		<img id="IMG_4420" src="Imag\IMG_4420.png">
-			
-	</div>
-	<div id="Gp2" class="Gp2">
-		<img id="teaspace3" src="Imag\teaspace3.png">
-			
-	</div>
-	<div id="Gp1" class="Gp1">
-		<img id="IMG_99072x" src="Imag\IMG_99072x.png">
-			
-	</div>
-	<div id="G_wave" class="G_wave">
-		<div id="Group_186_kl">
-			<svg class="Rectangle_31_km">
-				<rect id="Rectangle_31_km" rx="0" ry="0" x="0" y="0" width="28.361" height="4.226">
-				</rect>
-			</svg>
-			<svg class="Rectangle_32_kn">
-				<rect id="Rectangle_32_kn" rx="0" ry="0" x="0" y="0" width="28.361" height="4.226">
-				</rect>
-			</svg>
-		</div>
-		<div id="Group_186_ko">
-			<svg class="Rectangle_31_kp">
-				<rect id="Rectangle_31_kp" rx="0" ry="0" x="0" y="0" width="28.361" height="4.226">
-				</rect>
-			</svg>
-			<svg class="Rectangle_32_kq">
-				<rect id="Rectangle_32_kq" rx="0" ry="0" x="0" y="0" width="28.361" height="4.226">
-				</rect>
-			</svg>
-		</div>
-		<div id="Group_186_kr">
-			<svg class="Rectangle_31_ks">
-				<rect id="Rectangle_31_ks" rx="0" ry="0" x="0" y="0" width="28.361" height="4.226">
-				</rect>
-			</svg>
-			<svg class="Rectangle_32_kt">
-				<rect id="Rectangle_32_kt" rx="0" ry="0" x="0" y="0" width="28.361" height="4.226">
-				</rect>
-			</svg>
-		</div>
-		<div id="Group_186_ku">
-			<svg class="Rectangle_31_kv">
-				<rect id="Rectangle_31_kv" rx="0" ry="0" x="0" y="0" width="28.361" height="4.226">
-				</rect>
-			</svg>
-			<svg class="Rectangle_32_kw">
-				<rect id="Rectangle_32_kw" rx="0" ry="0" x="0" y="0" width="28.361" height="4.226">
-				</rect>
-			</svg>
-		</div>
-		<div id="Group_186_kx">
-			<svg class="Rectangle_31_ky">
-				<rect id="Rectangle_31_ky" rx="0" ry="0" x="0" y="0" width="28.361" height="4.226">
-				</rect>
-			</svg>
-			<svg class="Rectangle_32_kz">
-				<rect id="Rectangle_32_kz" rx="0" ry="0" x="0" y="0" width="28.361" height="4.226">
-				</rect>
-			</svg>
-		</div>
-	</div>
-	<div id="G-Tri" class="G_Tri">
-		<svg class="Polygon_2_k" viewBox="0 0 86.428 68.651">
-			<path id="Polygon_2_k" d="M 34.75096893310547 13.44444465637207 C 38.67285537719727 7.214027404785156 47.75493621826172 7.214027404785156 51.67681884765625 13.44444465637207 L 76.77973175048828 53.32365036010742 C 80.97157287597656 59.98293685913086 76.18557739257812 68.65083312988281 68.31680297851562 68.65083312988281 L 18.11098480224609 68.65083312988281 C 10.24220657348633 68.65083312988281 5.456214904785156 59.98293685913086 9.64806079864502 53.32365036010742 Z">
-			</path>
-		</svg>
-		<svg class="Polygon_3_k" viewBox="0 0 75.39 49.734">
-			<path id="Polygon_3_k" d="M 29.72520637512207 10.51506423950195 C 33.72670364379883 5.235500812530518 41.66290283203125 5.235500812530518 45.66439437866211 10.51506233215332 L 63.23229217529297 33.6941032409668 C 68.22386169433594 40.27996444702148 63.52643966674805 49.73443222045898 55.26269912719727 49.73442840576172 L 20.12690734863281 49.73443222045898 C 11.86316871643066 49.73443222045898 7.165743350982666 40.27996444702148 12.15731143951416 33.69410705566406 Z">
-			</path>
-		</svg>
-	</div>
-</div>
 </body>
 </html>
