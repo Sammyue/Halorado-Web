@@ -22,19 +22,43 @@ body {
     background: rgba(255,255,255,1);
 }
 
-/* navigation items */
+/* navigation before toggle */ 
 nav.nav-container {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 80;
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    background: rgba(157,158,206,0.97);
+    transition: all 0.5s ease 0s;
+}
+
+nav.nav-container div.nav {
+    display: flex;
+}
+
+nav.nav-container div.nav a {
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
 }
 
 nav.nav-contact {
     display: none;
 }
 
-.togglebox {
-    display: flex;
+nav.nav-sidebar-container {
+    display: none;
 }
 
+/* contact icons */
 nav.nav-contact-icon a {
     position: relative;
     right: 10;
@@ -70,6 +94,9 @@ nav.nav-container.active div.nav a {
     font-weight: normal;
 }
 
+.togglebox {
+    display: flex;
+}
 
 /* hide checkbox */
 input#hamburger {
@@ -102,7 +129,6 @@ div.bars-container.active span:nth-child(1){
 div.bars-container.active span:nth-child(3){
     transform: translateY(-8px) rotate(-45deg);
 }
-/* for desktop responsiveness */ 
 
 .main {
     padding: 90px 80px 10px 150px;
@@ -113,17 +139,17 @@ div.bars-container.active span:nth-child(3){
     font-size: 30px;
 }
 
-
+/* for desktop responsiveness */ 
 @media only screen and (min-width: 991px) {
-    nav.nav-container {
+    nav.nav-sidebar-container {
         display: block;
         position: fixed;
         width: 10%;
-        bottom: 150px;
         left: 0px;
+        top: 30%;
     }
 
-    div.nav {
+    div.nav-sidebar {
         position: relative;
         writing-mode: vertical-rl;
         -webkit-transform: translateX(50px) rotate(180deg);
@@ -131,7 +157,7 @@ div.bars-container.active span:nth-child(3){
     }
 
 
-    div.nav a {
+    div.nav-sidebar a {
         text-decoration: none;
         font-family: Mr Eaves San OT;
         font-weight: normal;
