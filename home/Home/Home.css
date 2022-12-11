@@ -19,7 +19,7 @@
 	position: absolute;
 	width: 1280px;
 	height: 6678px;
-	top: 8%;
+	top: 50px;
 	overflow: hidden;
 	z-index: 1;
 	--web-view-name: Home;
@@ -1682,33 +1682,18 @@
 	top: 2641.225px;
 	transform: matrix(1,0,0,1,0,0);
 }
+/* footer  */
+
 #Group_424 {
 	position: absolute;
-	width: 1280px;
+	width: 100%;
 	height: 130px;
 	left: 0px;
 	top: 6548px;
 	overflow: visible;
+	background: rgba(200,200,229,1);
 }
-#Group_36 {
-	position: absolute;
-	width: 1280px;
-	height: 130px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
-}
-#Rectangle_14 {
-	fill: rgba(200,200,229,1);
-}
-.Rectangle_14 {
-	position: absolute;
-	overflow: visible;
-	width: 1280px;
-	height: 130px;
-	left: 0px;
-	top: 0px;
-}
+
 #Halorado_2022 {
 	left: 539.105px;
 	top: 39px;
