@@ -19,7 +19,7 @@
 	position: absolute;
 	width: 1280px;
 	height: 6678px;
-	top: 50px;
+	margin-top: 40px;
 	overflow: hidden;
 	z-index: 1;
 	--web-view-name: Home;
@@ -1682,8 +1682,8 @@
 	top: 2641.225px;
 	transform: matrix(1,0,0,1,0,0);
 }
-/* footer  */
 
+/* footer  */
 #Group_424 {
 	position: absolute;
 	width: 100%;
@@ -1692,6 +1692,20 @@
 	top: 6548px;
 	overflow: visible;
 	background: rgba(200,200,229,1);
+}
+section.footer {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+section.footer p {
+    font-family: Mr Eaves San OT;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 57px;
+	color: rgba(0,0,0,1);
+	padding: 15px;
 }
 
 #Halorado_2022 {
@@ -3419,14 +3433,7 @@
 	left: 0px;
 	top: 0px;
 }
-#Logo {
-	position: absolute;
-	width: 154px;
-	height: 101px;
-	left: 85px;
-	top: 41px;
-	overflow: visible;
-}
+
 #Gp3 {
 	position: absolute;
 	width: 703px;
@@ -3672,7 +3679,6 @@
 	#Home {
 		position: static;
 		margin: 0 auto;
-		top: 80px;
+		margin-top: 30px;
 	}
-	
 }
