@@ -42,7 +42,7 @@ nav.nav-container {
     justify-content: center;
     position: fixed;
     left: 0;
-    top: 80px;
+    top: 70px;
     width: 100%;
     height: 0;
     overflow: hidden;
@@ -70,7 +70,6 @@ nav.nav-sidebar-container {
     display: none;
 }
 
-
 /* navigation after toggle */
 nav.nav-container.active {
     display: flex;
@@ -79,7 +78,7 @@ nav.nav-container.active {
     justify-content: center;
     position: fixed;
     left: 0;
-    top: 80px;
+    top: 70px;
     width: 100%;
     height: 47%;
     background: rgba(157,158,206,0.97);
@@ -197,6 +196,7 @@ div.bars-container.active span:nth-child(3){
         font-size: 25px;
         color: rgba(157,158,206,1);
         padding: 6px;
+        border: solid black 1px;
     }
 
     nav.nav-contact {

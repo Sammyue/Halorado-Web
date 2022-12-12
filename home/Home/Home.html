@@ -22,11 +22,11 @@
 				<a href="#"><img src="Imag/Logo_mobile.png" id="logo-mobile"></a>
 			</div>
 			<nav class="nav-container">
-				<div class="nav"><a href="#">Home</a></div>
-				<div class="nav"><a href="#">Gallery</a></div>
-				<div class="nav"><a href="#">Services</a></div>
-				<div class="nav"><a href="#">About</a></div>
-				<div class="nav"><a href="#">Contact</a></div> 
+				<div class="nav"><a href="#" onclick="closeMenu()">Home</a></div>
+				<div class="nav"><a href="#gallery" onclick="closeMenu()">Gallery</a></div>
+				<div class="nav"><a href="#service" onclick="closeMenu()">Services</a></div>
+				<div class="nav"><a href="#about" onclick="closeMenu()">About</a></div>
+				<div class="nav"><a href="#contact" onclick="closeMenu()">Contact</a></div> 
 			</nav>
 			<nav class="nav-contact">
 				<a href="#" class="fa fa-instagram"> @haloradostudio</a>
@@ -51,17 +51,22 @@
 		</section>
 		<section class="sidebar">
 			<nav class="nav-sidebar-container">
-				<div class="nav-sidebar"><a href="#">Home</a></div>
-				<div class="nav-sidebar"><a href="#">Gallery</a></div>
-				<div class="nav-sidebar"><a href="#">Services</a></div>
-				<div class="nav-sidebar"><a href="#">About</a></div>
-				<div class="nav-sidebar"><a href="#">Contact</a></div>
+				<div class="nav-sidebar"><a href="www.google.com" class="nav-sidebar-link">Home</a></div>
+				<div class="nav-sidebar"><a href="#" class="nav-sidebar-link">Gallery</a></div>
+				<div class="nav-sidebar"><a href="#" class="nav-sidebar-link">Services</a></div>
+				<div class="nav-sidebar"><a href="#" class="nav-sidebar-link">About</a></div>
+				<div class="nav-sidebar"><a href="#" class="nav-sidebar-link" >Contact</a></div>
 			</nav>
 		</section>
 		<script>
 			function showMenu (){
 				document.querySelector('.nav-container').classList.toggle('active');
 				document.querySelector('.bars-container').classList.toggle('active');
+			}
+
+			function closeMenu (){
+				document.querySelector('.nav-container').classList.toggle('active', false);
+				document.querySelector('.bars-container').classList.toggle('active', false);
 			}
 		</script>
 	</div>
@@ -71,6 +76,11 @@
     <!-- ****************************************************************** -->
 
 	<div id="Home">
+		<div id="gallery"></div>
+		<div id="service"></div>
+		<div id="about"></div>
+		<div id="contact"></div>
+
 		<img id="Logo" src="Imag\Logo.png">
 		<img id="zoey_2" src="Imag\zoey_2.png">
 			
